@@ -20,35 +20,30 @@ Each metric is designed to be interpretable and actionable, providing insights i
 
    ## **Pressing Challenges for Capitol.ai and Role of Evaluations**
 
-1. **Ensuring Output Quality**:
+- **Ensuring Output Quality**:
 
-   - **Challenge**: Maintaining relevance, accuracy, and logical structure across multi-modal responses.
-   - **Evaluations Help**: Use relevance, coherence, and factual accuracy metrics to ensure high-quality responses.
+  - **Challenge**: Maintaining relevance, accuracy, and logical structure across multi-modal responses.
+  - **Evaluations Help**: Use relevance, coherence, and factual accuracy metrics to ensure high-quality responses.
 
-1. **Multi-Modal Alignment**:
+- **Reducing Redundancy**:
 
-   - **Challenge**: Ensuring text, images, and charts are consistent and contextually aligned.
-   - **Evaluations Help**: Implement alignment checks to verify consistency across modalities.
+  - **Challenge**: Avoiding repetitive information across chunks.
+  - **Evaluations Help**: Use overlap metrics to penalize redundancy and improve uniqueness.
 
-1. **Reducing Redundancy**:
+- **Scaling Automated Evaluations**:
 
-   - **Challenge**: Avoiding repetitive information across chunks.
-   - **Evaluations Help**: Use overlap metrics to penalize redundancy and improve uniqueness.
+  - **Challenge**: Manual evaluation is infeasible for large-scale outputs.
+  - **Evaluations Help**: Automate evaluation pipelines for relevance, completeness, and factual validation.
 
-1. **Scaling Automated Evaluations**:
+- **Handling Complex Queries**:
 
-   - **Challenge**: Manual evaluation is infeasible for large-scale outputs.
-   - **Evaluations Help**: Automate evaluation pipelines for relevance, completeness, and factual validation.
+  - **Challenge**: Balancing depth, clarity, and personalization in responses.
+  - **Evaluations Help**: Use completeness and clarity metrics to address user intent effectively.
 
-1. **Handling Complex Queries**:
+2. Among these, pick 1-3 evaluation tasks of your choice that can be largely completed in the time given, and write evaluation scripts for those tasks.
+3. Are your results actionable? There's a big difference between an evaluation that makes a directionally correct conclusion and an evaluation that is precise enough for us to use when making client-impacting decisions. Think about what an evaluation needs to do to be used in production.
 
-   - **Challenge**: Balancing depth, clarity, and personalization in responses.
-   - **Evaluations Help**: Use completeness and clarity metrics to address user intent effectively.
-
-1. Among these, pick 1-3 evaluation tasks of your choice that can be largely completed in the time given, and write evaluation scripts for those tasks.
-1. Are your results actionable? There's a big difference between an evaluation that makes a directionally correct conclusion and an evaluation that is precise enough for us to use when making client-impacting decisions. Think about what an evaluation needs to do to be used in production.
-
-1. If there is anything you don't have time to do, spend time thinking about what you would do with more time, since I may ask about this.
+4. If there is anything you don't have time to do, spend time thinking about what you would do with more time, since I may ask about this.
 
 - To improve this further, I would look at the type of FAQs and see where the system underperforms. I would try to build custom solutions for the majority of such cases.
 - I would fine tune the prompt or fine tune the LLM to give desired answers based on the queries. I would try to maximize the retention time of a user as a parameter to be maximized. More the amount of time used in reading the articles, more the revenues.
