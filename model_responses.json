@@ -1,116 +1,168 @@
 [
     {
-        "query": "What role does memory play in cognitive psychology?",
-        "document": [
-            {
-                "header": "The Role of Memory in Cognitive Psychology"
-            },
-            {
-                "paragraph": "Memory plays a pivotal role in cognitive psychology, as it is the process of encoding, storing, and retrieving information that is essential for the acquisition and retention of knowledge and skills. In cognitive psychology, several key theories and models explain how memory functions and information is processed. The Atkinson-Shiffrin Model, Levels of Processing Model, Baddeley's Working Memory Model, and other notable theories collectively provide a comprehensive understanding of the complex processes involved in human memory.",
-                "citations": [
-                    1
-                ]
-            },
-            {
-                "metric": "3 stages",
-                "description": "Number of sequential stages of memory in the Atkinson-Shiffrin Model",
-                "citations": [
-                    1
-                ]
-            },
-            {
-                "paragraph": "Memory affects learning by providing the foundation for linking new knowledge to existing experiences and information. The encoding process is influenced by factors such as attention, emotion, and prior knowledge, with emotions particularly enhancing memory encoding and recall. The storage and retrieval processes are also crucial, as successful retrieval depends on cues, context, and familiarity, and can be impacted by factors like stress, sleep, and aging.",
-                "citations": [
-                    2
-                ]
-            },
-            {
-                "table": [
-                    [
-                        "Type of Memory",
-                        "Description"
-                    ],
-                    [
-                        "Explicit Memory",
-                        "Consciously recalled"
-                    ],
-                    [
-                        "Implicit Memory",
-                        "Unconsciously recalled"
-                    ],
-                    [
-                        "Episodic Memory",
-                        "Memories of personal experiences"
-                    ],
-                    [
-                        "Semantic Memory",
-                        "General knowledge and facts"
-                    ]
-                ],
-                "citations": [
-                    3
-                ]
-            },
-            {
-                "paragraph": "Memory influences actions through both explicit and implicit processes. Explicit memory involves conscious recall, while implicit memory affects behavior automatically, such as through priming, where past experiences influence current actions without conscious awareness. Additionally, the emotional state at the time of an event can modulate memory recall, a phenomenon known as the mood congruence effect, which affects how memories are accessed and influence behavior.",
-                "citations": [
-                    2
-                ]
-            },
-            {
-                "web_query": "brain illustration with memory centers highlighted",
-                "query_type": "image"
-            }
-        ],
-        "metrics": {
-            "total_relevance": 0.8690825524750765,
-            "chunk_relevances": [
-                0.9666942193459882,
-                0.9003854268162934,
-                0.8256661680300195,
-                0.8380268840775418,
-                0.8493486475321899,
-                0.8343739690484269
-            ],
-            "completeness": 0.5555555555555556,
-            "overlap_score": 0.1333333333333333,
-            "final_score": 0.6803384203739349
-        }
-    },
-    {
         "query": "How does quantum superposition differ from classical binary states?",
         "document": [
             {
-                "header": "Quantum Superposition vs Classical Binary States"
+                "header": "Quantum Superposition vs. Classical Binary States"
             },
             {
-                "paragraph": "Quantum superposition is a fundamental principle in quantum mechanics where a quantum system can exist in multiple states simultaneously, unlike classical systems which must be in one definite state at any given time. In quantum superposition, a system can be a linear combination of all its possible states, each with associated complex probability amplitudes. For example, a qubit (quantum bit) can be both 0 and 1 at the same time, whereas a classical bit can only be either 0 or 1.",
+                "paragraph": "Quantum superposition, a fundamental principle of quantum mechanics, represents a profound departure from classical binary states. In classical computing, bits are confined to definite states of either 0 or 1. However, quantum superposition allows quantum bits, or qubits, to exist in multiple states simultaneously. This means a qubit can be both 0 and 1 at the same time, along with any combination in between, until it is measured.",
                 "citations": [
                     2
                 ]
             },
             {
-                "metric": "2^n",
-                "description": "Number of computations a quantum computer with n qubits can perform simultaneously",
+                "paragraph": "The implications of this difference are far-reaching. While classical computers process information sequentially, quantum computers can leverage superposition to perform multiple computations in parallel. This quantum parallelism enables quantum systems to represent and manipulate a vast number of states probabilistically, with each component state having an associated complex probability amplitude.",
+                "citations": [
+                    2,
+                    3
+                ]
+            },
+            {
+                "metric": "2^N",
+                "description": "The number of possible states a quantum computer with N qubits can process simultaneously, showcasing the exponential increase in computational power.",
                 "citations": [
                     3
                 ]
             },
             {
-                "paragraph": "The principle of quantum superposition is a fundamental aspect of quantum mechanics, stemming from the linearity of the Schr\u00f6dinger equation. This equation, which governs the behavior of quantum systems, is a linear differential equation in time and position, meaning that any linear combination of its solutions is also a solution. As a result, a quantum system can exist in a state that is a linear combination of multiple distinct states.",
+                "paragraph": "This exponential scaling of computational power with each additional qubit is a key advantage of quantum computing. It allows quantum computers to tackle complex problems that are intractable for classical computers, particularly in fields such as optimization, financial modeling, and drug discovery. For instance, in optimization problems, quantum computers can explore multiple solutions simultaneously, leading to potentially faster and more efficient problem-solving.",
                 "citations": [
-                    1
+                    1,
+                    3
+                ]
+            },
+            {
+                "web_query": "quantum superposition visualization",
+                "query_type": "image"
+            },
+            {
+                "paragraph": "However, it's crucial to note that the superposition state collapses upon measurement, yielding a single definite outcome. This collapse distinguishes quantum systems from classical ones and presents both challenges and opportunities in quantum computing. It necessitates careful algorithm design to harness the power of superposition while managing the probabilistic nature of quantum measurements.",
+                "citations": [
+                    2,
+                    3
                 ]
             },
             {
                 "table": [
                     [
-                        "Classical Bit",
-                        "Quantum Bit"
+                        "Aspect",
+                        "Classical Binary States",
+                        "Quantum Superposition"
                     ],
                     [
-                        "Can only be 0 or 1",
-                        "Can be 0, 1, or a linear combination of both"
+                        "State Representation",
+                        "Definite (0 or 1)",
+                        "Probabilistic combination of states"
+                    ],
+                    [
+                        "Computation",
+                        "Sequential",
+                        "Parallel"
+                    ],
+                    [
+                        "Information Density",
+                        "1 bit per state",
+                        "Exponential with number of qubits"
+                    ],
+                    [
+                        "Measurement Impact",
+                        "No change to state",
+                        "Collapses superposition to definite state"
+                    ]
+                ],
+                "citations": [
+                    2,
+                    3
+                ]
+            }
+        ],
+        "metrics": {
+            "total_relevance": 0.875568415925873,
+            "chunk_relevances": [
+                0.9634731090879556,
+                0.9158659551413504,
+                0.8792327277728264,
+                0.8109797148327516,
+                0.8138990158806408,
+                0.8615913391194081,
+                0.8839370496461783
+            ],
+            "completeness": 0.6,
+            "overlap_score": 0.04761904761904767,
+            "engagement_score": 0.6,
+            "final_score": 0.5997511758941587
+        }
+    },
+    {
+        "query": "How do solar panels convert sunlight into electricity?",
+        "document": [
+            {
+                "header": "Solar Panels: Converting Sunlight into Electricity"
+            },
+            {
+                "paragraph": "Solar panels harness the power of sunlight to generate clean, renewable electricity through a fascinating process known as the photovoltaic effect. This innovative technology has become increasingly popular as the world seeks sustainable energy solutions to combat climate change and reduce dependence on fossil fuels. Understanding how solar panels work can help us appreciate their potential in shaping our energy future.",
+                "citations": [
+                    1,
+                    3
+                ]
+            },
+            {
+                "paragraph": "At the heart of every solar panel are photovoltaic (PV) cells, typically made from silicon. These cells are the workhorses of the system, responsible for converting light energy into electrical energy. When sunlight strikes the surface of a PV cell, it energizes the electrons within the silicon atoms, causing them to break free from their atomic bonds. This process creates a flow of electrons, which is essentially an electric current.",
+                "citations": [
+                    1,
+                    2
+                ]
+            },
+            {
+                "web_query": "diagram of photovoltaic cell structure",
+                "query_type": "image"
+            },
+            {
+                "paragraph": "The structure of a solar panel is designed to maximize energy capture and protect the delicate PV cells. Multiple cells are arranged in a grid-like pattern and sandwiched between a protective glass sheet on top and a back sheet on the bottom. These layers are held together by a special adhesive and encased in a sturdy metal frame, usually made of aluminum. This construction ensures durability against various weather conditions while allowing sunlight to reach the PV cells efficiently.",
+                "citations": [
+                    2
+                ]
+            },
+            {
+                "metric": "1,366 watts per square meter",
+                "description": "The average amount of solar energy that reaches Earth's upper atmosphere",
+                "citations": [
+                    3
+                ]
+            },
+            {
+                "paragraph": "Once the PV cells generate electricity, it's in the form of direct current (DC). However, most household appliances and the power grid operate on alternating current (AC). This is where inverters come into play. These crucial components convert the DC electricity produced by the solar panels into usable AC electricity. From there, the electricity can power homes, businesses, or even be fed back into the electrical grid.",
+                "citations": [
+                    1,
+                    2
+                ]
+            },
+            {
+                "table": [
+                    [
+                        "Component",
+                        "Function"
+                    ],
+                    [
+                        "Photovoltaic (PV) Cells",
+                        "Convert sunlight into electrical energy"
+                    ],
+                    [
+                        "Glass Sheet",
+                        "Protects PV cells and allows sunlight through"
+                    ],
+                    [
+                        "Back Sheet",
+                        "Prevents overheating and moisture intrusion"
+                    ],
+                    [
+                        "Metal Frame",
+                        "Provides structural support and weather protection"
+                    ],
+                    [
+                        "Inverter",
+                        "Converts DC power to AC power for use"
                     ]
                 ],
                 "citations": [
@@ -118,29 +170,126 @@
                 ]
             },
             {
-                "paragraph": "The practical implications of quantum superposition in technology are profound and distinguish it significantly from classical computing. In quantum computing, superposition allows qubits to exist in multiple states (0, 1, or a linear combination of both) simultaneously, enabling quantum parallelism where a single operation can process an exponential number of possibilities at once.",
+                "paragraph": "While solar energy offers numerous advantages, including reduced greenhouse gas emissions and lower electricity bills, it's important to consider some limitations. The efficiency of solar panels can be affected by factors such as cloud cover, time of day, and geographical location. Additionally, the initial installation costs can be significant, although they are often offset by long-term savings and various incentives.",
                 "citations": [
                     3
                 ]
             },
             {
-                "web_query": "diagram of a qubit in superposition",
-                "query_type": "image"
+                "web_query": "chart comparing solar panel efficiency over the past decade",
+                "query_type": "chart"
             }
         ],
         "metrics": {
-            "total_relevance": 0.8818350907268027,
+            "total_relevance": 0.8695019983023428,
             "chunk_relevances": [
-                0.9640085544713561,
-                0.8986234362815403,
-                0.8142053491505451,
-                0.874442181400388,
-                0.8877940730859332,
-                0.851936949971053
+                0.9375293988430142,
+                0.900474678267924,
+                0.9122235426226539,
+                0.8232235936874763,
+                0.86519197391616,
+                0.8181606902524905,
+                0.8870387908279412,
+                0.8575431041599963,
+                0.8241322121434268
             ],
-            "completeness": 0.6,
-            "overlap_score": 0.06666666666666665,
-            "final_score": 0.6891010544360816
+            "completeness": 0.7777777777777778,
+            "overlap_score": 0.16666666666666663,
+            "engagement_score": 0.8,
+            "final_score": 0.6955785770987148
+        }
+    },
+    {
+        "query": "What role do renewable energy sources play in combating climate change?",
+        "document": [
+            {
+                "header": "Renewable Energy's Crucial Role in Combating Climate Change"
+            },
+            {
+                "paragraph": "Renewable energy sources play a pivotal role in the global fight against climate change. These clean energy alternatives, including solar, wind, hydro, and biomass, offer a sustainable path to reducing greenhouse gas emissions and mitigating the impacts of global warming. By replacing fossil fuels in electricity generation, renewable energy sources significantly decrease the carbon footprint of our energy consumption, making them essential tools in climate change mitigation strategies.",
+                "citations": [
+                    1
+                ]
+            },
+            {
+                "metric": "50g CO2/kWh or less",
+                "description": "Typical lifecycle emissions of renewable energy sources, substantially lower than fossil fuels",
+                "citations": [
+                    1
+                ]
+            },
+            {
+                "paragraph": "The effectiveness of renewable energy in combating climate change varies across different technologies. Solar and wind energy have seen remarkable advancements, with substantial cost reductions making them increasingly competitive with traditional energy sources. Offshore wind, in particular, shows great promise in providing a significant portion of electricity needs in many countries. Hydroelectric power offers reliability and minimal operational emissions, although it can be affected by changing climate patterns.",
+                "citations": [
+                    2
+                ]
+            },
+            {
+                "web_query": "chart comparing greenhouse gas emissions of different energy sources",
+                "query_type": "chart"
+            },
+            {
+                "paragraph": "To promote the adoption of renewable energy in the fight against climate change, governments and international organizations are implementing various policies and initiatives. These include economic incentives like feed-in tariffs and tax credits, as well as investments in research and development to enhance the efficiency and reduce the costs of renewable technologies. Global efforts, such as the UN-Energy Plan of Action Towards 2025, aim to increase renewable capacity worldwide and phase out new coal power plants.",
+                "citations": [
+                    3
+                ]
+            },
+            {
+                "table": [
+                    [
+                        "Policy Type",
+                        "Example",
+                        "Goal"
+                    ],
+                    [
+                        "Economic Incentive",
+                        "Feed-in Tariffs",
+                        "Encourage adoption of renewables"
+                    ],
+                    [
+                        "International Initiative",
+                        "G20 Voluntary Action Plan",
+                        "Increase renewable share by 2030"
+                    ],
+                    [
+                        "Carbon Pricing",
+                        "EU Emissions Trading System",
+                        "Reduce reliance on fossil fuels"
+                    ],
+                    [
+                        "R&D Investment",
+                        "Technology Enhancement Programs",
+                        "Improve efficiency and reduce costs"
+                    ]
+                ],
+                "citations": [
+                    3
+                ]
+            },
+            {
+                "paragraph": "The transition to renewable energy not only helps in reducing greenhouse gas emissions but also improves air quality and provides clean, reliable, and increasingly affordable energy. This shift supports global efforts to decarbonize the power sector and meet ambitious emission reduction goals set by international agreements like the Paris Accord. As renewable technologies continue to advance and become more cost-effective, their role in combating climate change is expected to grow even more significant in the coming years.",
+                "citations": [
+                    1,
+                    2,
+                    3
+                ]
+            }
+        ],
+        "metrics": {
+            "total_relevance": 0.8802229540284213,
+            "chunk_relevances": [
+                0.9340607608601503,
+                0.9145758616994355,
+                0.8264297319404508,
+                0.9050896442712497,
+                0.8273717355638892,
+                0.8653421717109091,
+                0.8886907721528648
+            ],
+            "completeness": 0.75,
+            "overlap_score": 0.0,
+            "engagement_score": 0.8,
+            "final_score": 0.6595891816113685
         }
     },
     {
@@ -150,337 +299,246 @@
                 "header": "Current Applications of Brain-Computer Interfaces in Medical Fields"
             },
             {
-                "paragraph": "Brain-computer interfaces (BCIs) have made significant progress in recent years, with various applications in medical fields. Invasive BCIs, such as those developed by Neuralink, involve implanting high-electrode-count devices directly into the brain, enabling precise control over digital devices and potentially restoring communication and motor functions for individuals with severe physical disabilities. Non-invasive BCIs, including electroencephalography (EEG) and functional near-infrared spectroscopy (fNIRS), are becoming more accurate and user-friendly, making them viable alternatives to invasive implants.",
+                "paragraph": "Brain-computer interfaces (BCIs) have emerged as groundbreaking technologies in various medical applications, revolutionizing patient care and rehabilitation. These innovative systems establish a direct communication pathway between the brain and external devices, offering new hope for individuals with neurological disorders and severe physical disabilities. As of 2025, BCIs are being actively employed in multiple medical fields, showcasing their versatility and potential to transform healthcare.",
                 "citations": [
-                    1
+                    2,
+                    3
                 ]
             },
             {
-                "metric": "75% of stroke patients experience motor impairments",
-                "description": "Percentage of stroke patients who experience motor impairments, highlighting the need for effective rehabilitation therapies",
+                "paragraph": "One of the most prominent applications of BCIs is in stroke rehabilitation. These interfaces are being used to restore motor, cognitive, and communication functions in stroke patients. By combining motor imagery exercises with feedback mechanisms such as Functional Electrical Stimulation (FES) and Virtual Reality (VR), BCIs facilitate neural plasticity and improve motor functions. This approach has shown significant promise in enhancing both upper and lower extremity movements, even in patients with severe impairments who may not respond to conventional therapies.",
                 "citations": [
                     2
                 ]
             },
             {
-                "paragraph": "BCIs are being increasingly utilized in rehabilitation therapies for stroke patients to restore motor function, particularly in the upper extremity. These systems leverage neural activity to control external devices, providing real-time feedback that enhances neuroplasticity. Studies have shown that combining motor imagery-based BCIs with functional electrical stimulation (FES) or virtual reality (VR) can lead to significant functional improvements and increased functional connectivity between motor areas in the affected hemisphere.",
+                "web_query": "brain-computer interface stroke rehabilitation",
+                "query_type": "image"
+            },
+            {
+                "paragraph": "In the field of neurology, BCIs are making substantial strides in treating various disorders. For patients with severe communication and motor impairments due to conditions like spinal cord injuries and neurodegenerative diseases, BCIs offer revolutionary benefits. Non-invasive technologies, such as those using electroencephalography (EEG) and functional near-infrared spectroscopy (fNIRS), are becoming increasingly popular, improving accessibility and reducing the need for surgical interventions.",
                 "citations": [
-                    2
+                    3
+                ]
+            },
+            {
+                "metric": "High-electrode-count implants",
+                "description": "Neuralink's advanced BCI implants capable of detecting detailed neural signals for restoring communication and control abilities in severely disabled individuals",
+                "citations": [
+                    3
+                ]
+            },
+            {
+                "paragraph": "Another cutting-edge application of BCIs is in cognitive enhancement and restoration. AI-enhanced cognitive interfaces are being developed to interpret complex neural signals more accurately and adapt to individual users over time. This technology holds the potential to seamlessly integrate human cognition with artificial intelligence, possibly augmenting human cognitive abilities. For individuals with conditions like unilateral spatial neglect, these advanced BCIs support cognitive restoration, offering new avenues for treatment and rehabilitation.",
+                "citations": [
+                    3
                 ]
             },
             {
                 "table": [
                     [
                         "BCI Application",
-                        "Description"
+                        "Description",
+                        "Potential Benefits"
                     ],
                     [
-                        "Rehabilitation Therapies",
-                        "Restore motor function in stroke patients"
+                        "Motor Rehabilitation",
+                        "Combines motor imagery with FES and VR",
+                        "Improves limb function in stroke patients"
                     ],
                     [
-                        "Neurological Rehabilitation",
-                        "Enhance motor recovery, manage pain, and support cognitive restoration"
+                        "Communication Aid",
+                        "Converts neural signals to external commands",
+                        "Enables communication for severely paralyzed individuals"
                     ],
                     [
-                        "Cognitive Restoration",
-                        "Support cognitive restoration in individuals with neurological disorders"
+                        "Cognitive Enhancement",
+                        "AI-enhanced signal interpretation",
+                        "Potential to augment human cognitive abilities"
+                    ],
+                    [
+                        "Pain Management",
+                        "Neural signal modulation",
+                        "Alternative approach to chronic pain treatment"
                     ]
                 ],
                 "citations": [
-                    1,
-                    2
+                    2,
+                    3
                 ]
             },
             {
-                "web_query": "brain-computer interface for stroke rehabilitation",
-                "query_type": "image"
-            },
-            {
-                "paragraph": "However, the use of BCIs in medical applications also raises several ethical considerations, including the erosion of privacy, physical risks associated with invasive technologies, and psychological impacts on users. Issues of inequality and fairness, informed consent, and autonomy are also critical areas that need to be addressed to ensure the ethical deployment of BCIs.",
+                "paragraph": "While the advancements in BCI technology offer immense potential for medical applications, they also raise important ethical considerations. Issues such as user autonomy, privacy, and the impact on personal identity are at the forefront of discussions surrounding BCI use. The collection and processing of sensitive neural data raise concerns about surveillance and potential misuse. Additionally, ensuring informed consent, especially for patients with limited cognitive capacity, presents a complex ethical challenge that needs to be addressed as BCI technology continues to evolve and integrate into medical practice.",
                 "citations": [
-                    3
+                    1
                 ]
             }
         ],
         "metrics": {
-            "total_relevance": 0.8654637904415221,
+            "total_relevance": 0.8831325379862356,
             "chunk_relevances": [
                 0.9716640911261505,
-                0.8754575459343541,
-                0.7724688215925418,
-                0.8570141546417591,
-                0.8766532414674092,
-                0.8395248878869184
+                0.903507474726361,
+                0.8748817645667994,
+                0.8692726734801395,
+                0.8705755939103983,
+                0.8403693327599129,
+                0.8662859347257478,
+                0.8685034385943746
             ],
             "completeness": 0.8333333333333334,
-            "overlap_score": 0.2666666666666667,
-            "final_score": 0.7676116075982466
-        }
-    },
-    {
-        "query": "How do solar panels convert sunlight into electricity?",
-        "document": [
-            {
-                "header": "How Solar Panels Convert Sunlight into Electricity"
-            },
-            {
-                "paragraph": "Solar panels convert sunlight into electricity through the photovoltaic effect, a process that involves several key steps. At the core of this process are photovoltaic (PV) cells, typically made from the semiconductor material silicon. When sunlight, composed of photons, hits these PV cells, it initiates photon absorption, where the photons are absorbed by the silicon material. This absorption energizes the electrons within the silicon atoms, causing them to break free from their atomic bonds, a phenomenon known as electron excitation.",
-                "citations": [
-                    2
-                ]
-            },
-            {
-                "metric": "20%",
-                "description": "Maximum efficiency rating of monocrystalline solar panels",
-                "citations": [
-                    3
-                ]
-            },
-            {
-                "paragraph": "The PV cells are designed with two layers of silicon, one positively charged (p-type) and one negatively charged (n-type), creating an electric field that directs the flow of these freed electrons, generating a direct current (DC) of electricity. Multiple PV cells are combined to form solar panels, and these panels can be connected into larger arrays to increase power output.",
-                "citations": [
-                    2
-                ]
-            },
-            {
-                "table": [
-                    [
-                        "Solar Panel Type",
-                        "Efficiency Rating"
-                    ],
-                    [
-                        "Monocrystalline",
-                        "16.5% - 20%"
-                    ],
-                    [
-                        "Polycrystalline",
-                        "15% - 18%"
-                    ],
-                    [
-                        "PERC (Passivated Emitter and Rear Cell)",
-                        "17% - 19.5%"
-                    ],
-                    [
-                        "Thin-film",
-                        "7% - 10%"
-                    ]
-                ],
-                "citations": [
-                    3
-                ]
-            },
-            {
-                "paragraph": "Finally, the DC electricity produced by the solar panels is converted into alternating current (AC) electricity using an inverter, making it usable for household appliances and the electrical grid. This process allows solar panels to provide a clean and renewable source of energy, reducing our reliance on fossil fuels and mitigating the environmental impacts associated with traditional energy generation.",
-                "citations": [
-                    2
-                ]
-            }
-        ],
-        "metrics": {
-            "total_relevance": 0.8933698715924008,
-            "chunk_relevances": [
-                0.9666160237372928,
-                0.9113529747695215,
-                0.8158039406507164,
-                0.8792413326299012,
-                0.8938350861745723
-            ],
-            "completeness": 0.7777777777777778,
-            "overlap_score": 0.30000000000000004,
-            "final_score": 0.775466367399885
+            "overlap_score": 0.0,
+            "engagement_score": 0.7,
+            "final_score": 0.6665863485278276
         }
     },
     {
         "query": "What are the fundamental principles of bioinformatics and how do they apply to genomic data analysis?",
         "document": [
             {
-                "header": "Fundamentals of Bioinformatics in Genomic Data Analysis"
+                "header": "Fundamental Principles of Bioinformatics in Genomic Data Analysis"
             },
             {
-                "paragraph": "Bioinformatics is a multidisciplinary field that combines biology, computer science, mathematics, and statistics to manage and analyze large-scale biological datasets, particularly genomic data. The key principles of bioinformatics in relation to genomic data analysis involve data management and analysis, integration of disciplines, and computational and statistical techniques. Bioinformatics integrates biology, computer science, mathematics, and statistics to manage and interpret large biological datasets, particularly genomic data.",
+                "paragraph": "Bioinformatics is a multidisciplinary field that combines biology, computer science, mathematics, and statistics to analyze and interpret complex biological data, particularly genomic information. At its core, bioinformatics relies on several key principles that guide the analysis of genomic data. These principles include data management and analysis, integration of disciplines, data quality control, advanced computational techniques, and integration with clinical and biological data. Each of these principles plays a crucial role in extracting meaningful insights from the vast amounts of genomic information generated by modern sequencing technologies.",
                 "citations": [
-                    2
+                    3
                 ]
             },
             {
-                "metric": "1000s of genomes",
-                "description": "Number of genomes analyzed using bioinformatics tools and techniques",
+                "paragraph": "One of the fundamental principles of bioinformatics is the management and analysis of large-scale biological datasets. This involves collecting, storing, and processing DNA, RNA, and protein sequences, as well as gene expression data. Bioinformatics tools and software are designed to handle these massive datasets efficiently, allowing researchers to organize, retrieve, and analyze genomic information effectively. For example, genome browsers like the UCSC Genome Browser and Ensembl Genome Browser are widely used for visualizing and analyzing genome data, including gene expression, sequence variants, and epigenetic modifications.",
+                "citations": [
+                    2,
+                    3
+                ]
+            },
+            {
+                "web_query": "UCSC Genome Browser interface",
+                "query_type": "image"
+            },
+            {
+                "paragraph": "Data quality control and preprocessing form another critical principle in bioinformatics. Before any analysis can be performed, it's essential to ensure the accuracy and reliability of the genomic data. This process involves several steps, including raw read quality control, detection and rectification of anomalies, elimination of low-quality bases, and alignment of sequencing reads to a reference genome. Tools like BWA, minimap, and STAR are commonly used for read alignment, which helps in detecting the origin of each read and identifying variations. This meticulous preparation of data is crucial for the precision and reliability of subsequent analyses.",
                 "citations": [
                     1,
-                    2
-                ]
-            },
-            {
-                "paragraph": "The process of genomic data analysis typically follows a structured pattern: data collection, quality check and cleaning, processing, modeling, visualization, and reporting. This involves rigorous quality assessments, preprocessing to eliminate low-quality data, alignment of genomic data to reference genomes, and the identification of genes and regulatory elements.",
-                "citations": [
-                    2
+                    3
                 ]
             },
             {
                 "table": [
                     [
                         "Step",
-                        "Description"
+                        "Purpose",
+                        "Example Tools"
                     ],
                     [
-                        "Data Collection",
-                        "Collecting genomic data from various sources"
+                        "Quality Control",
+                        "Ensure data accuracy",
+                        "FastQC, Trimmomatic"
                     ],
                     [
-                        "Quality Check and Cleaning",
-                        "Eliminating low-quality data and preprocessing"
+                        "Read Alignment",
+                        "Map reads to reference genome",
+                        "BWA, minimap, STAR"
                     ],
                     [
-                        "Processing",
-                        "Aligning genomic data to reference genomes"
+                        "Variant Calling",
+                        "Identify genetic variations",
+                        "GATK, VarScan"
                     ],
                     [
-                        "Modeling",
-                        "Identifying genes and regulatory elements"
+                        "Genome Assembly",
+                        "Reconstruct genome sequence",
+                        "SPAdes, Velvet"
                     ],
                     [
-                        "Visualization",
-                        "Visualizing genomic data using genome browsers"
-                    ],
-                    [
-                        "Reporting",
-                        "Interpreting and reporting results"
+                        "Annotation",
+                        "Identify functional elements",
+                        "BLAST, InterProScan"
                     ]
                 ],
                 "citations": [
+                    1,
                     2
                 ]
             },
             {
-                "paragraph": "Bioinformatics tools and software are essential for analyzing genomic data. Some commonly used tools include QIAGEN Digital Insights, Lasergene Genomics, UGENE Bioinformatics Suite, SAMtools, GenomeSpace, Geneious Prime, and GenomeTools. These tools offer a range of functionalities, including data normalization, quality control, read mapping, and gene expression analysis.",
+                "paragraph": "Advanced computational techniques form the backbone of bioinformatics analysis. These include machine learning, pattern recognition, and data visualization methods, which are essential for interpreting complex genomic data. For instance, variant calling tools like GATK are employed to identify differences compared to reference sequences, including single nucleotide variants (SNVs), insertions/deletions (indels), and large structural variants. Additionally, sequence analysis involves comparing sequences to infer homology, identifying intrinsic features such as active sites and regulatory elements, and studying genetic variations to understand evolutionary and genetic diversity.",
                 "citations": [
+                    1,
                     3
                 ]
             },
             {
-                "web_query": "Bioinformatics workflow for genomic data analysis",
+                "metric": "3 billion base pairs",
+                "description": "Approximate size of the human genome that bioinformatics tools must process and analyze",
+                "citations": [
+                    1,
+                    2,
+                    3
+                ]
+            },
+            {
+                "paragraph": "Integration with clinical and other biological data is a crucial principle that bridges the gap between genomic findings and their real-world applications. This integration is vital in fields like personalized medicine, drug discovery, and medical diagnostics. Bioinformatics tools enable the prediction of the effects of genetic variants, aiding in prioritizing rare functional variants and boosting the power of genetic association analyses. Software like VIA\u2122 Analysis Software by Bionano integrates data from various sources, including optical genome mapping, next-generation sequencing, and microarrays, to automate variant calling, interpretation, and annotation, providing powerful visualizations for genomic variant analysis.",
+                "citations": [
+                    1,
+                    2,
+                    3
+                ]
+            },
+            {
+                "web_query": "chart showing the process of integrating genomic data with clinical information",
                 "query_type": "chart"
             }
         ],
         "metrics": {
-            "total_relevance": 0.8776096695218647,
+            "total_relevance": 0.8660838469878056,
             "chunk_relevances": [
-                0.9331372580786286,
-                0.8781082929681254,
-                0.850374008423934,
-                0.8676002414366479,
-                0.8728703894523183,
-                0.8635678267715333
+                0.9451090901162116,
+                0.88863979303624,
+                0.891404640334553,
+                0.7908488953283692,
+                0.8639339349023957,
+                0.882314080746724,
+                0.8458301736356832,
+                0.8678700095533602,
+                0.8188040052367144
             ],
-            "completeness": 0.5882352941176471,
-            "overlap_score": 0.0,
-            "final_score": 0.6736246252425306
-        }
-    },
-    {
-        "query": "How do biases in data affect the outcomes of machine learning models?",
-        "document": [
-            {
-                "header": "The Impact of Biases in Data on Machine Learning Models"
-            },
-            {
-                "paragraph": "Machine learning models are only as good as the data they are trained on. However, data is often prone to various types of biases that can lead to systemically prejudiced results. These biases can arise from several sources, including sample bias, prejudice bias, social bias, implicit bias, algorithm bias, measurement bias, exclusion or reporting bias, automation bias, selection bias, temporal bias, historical bias, proxy variables, and unbalanced datasets.",
-                "citations": [
-                    1
-                ]
-            },
-            {
-                "metric": "75% of AI projects fail due to biased data",
-                "description": "Percentage of AI projects that fail due to biased data",
-                "citations": [
-                    1
-                ]
-            },
-            {
-                "paragraph": "Biased datasets significantly impact the accuracy and fairness of machine learning models by introducing and perpetuating existing biases. When a dataset is not representative of the population it is intended to serve, the model may perform poorly on underrepresented groups, leading to inaccurate predictions, discriminatory outcomes, and a lack of generalization to new or unseen data.",
-                "citations": [
-                    3
-                ]
-            },
-            {
-                "table": [
-                    [
-                        "Bias Type",
-                        "Description"
-                    ],
-                    [
-                        "Sample Bias",
-                        "Training data is not large or representative enough"
-                    ],
-                    [
-                        "Prejudice Bias",
-                        "Training data reflects existing societal prejudices"
-                    ],
-                    [
-                        "Implicit Bias",
-                        "Models are designed or data is curated using human designer's own ways of thinking"
-                    ],
-                    [
-                        "Algorithm Bias",
-                        "Problems within the algorithm itself"
-                    ],
-                    [
-                        "Measurement Bias",
-                        "Issues with the accuracy of the data and how it was measured"
-                    ]
-                ],
-                "citations": [
-                    1
-                ]
-            },
-            {
-                "paragraph": "To mitigate bias in machine learning algorithms, several comprehensive strategies can be implemented across various stages of the AI lifecycle. These strategies include ensuring diverse and representative data collection, using data preprocessing techniques, incorporating fairness constraints and regularization into the learning algorithm, and enhancing model interpretability and transparency.",
-                "citations": [
-                    2
-                ]
-            },
-            {
-                "web_query": "image of a biased dataset affecting a machine learning model",
-                "query_type": "image"
-            }
-        ],
-        "metrics": {
-            "total_relevance": 0.9006925571230305,
-            "chunk_relevances": [
-                0.9621210754014075,
-                0.8974222294731153,
-                0.8552049045117724,
-                0.91742849738516,
-                0.8609681801647809,
-                0.9110104558019473
-            ],
-            "completeness": 0.6923076923076923,
-            "overlap_score": 0.0,
-            "final_score": 0.7134924573507413
+            "completeness": 0.6470588235294118,
+            "overlap_score": 0.13888888888888884,
+            "engagement_score": 0.6,
+            "final_score": 0.625976022455253
         }
     },
     {
         "query": "What are the latest trends in the synthesis of nanomaterials?",
         "document": [
             {
-                "header": "Recent Trends in Nanomaterial Synthesis"
+                "header": "Latest Trends in Nanomaterial Synthesis: Innovations and Applications"
             },
             {
-                "paragraph": "The synthesis of nanomaterials has witnessed significant advancements in recent years, with various techniques being developed to produce high-quality nanoparticles with specific properties. As of 2025, researchers have made notable progress in the use of spark ablation, artificial intelligence (AI), and robotics in nanomaterial synthesis. These advancements have improved the efficiency, safety, and versatility of nanomaterial production, enabling their widespread application across various industries.",
+                "paragraph": "As of 2025, the field of nanomaterial synthesis has witnessed remarkable advancements, revolutionizing various industries. One of the most significant trends is the integration of artificial intelligence (AI) and robotics in smart laboratories. The 'Smart Lab' platform, for instance, has dramatically increased efficiency in nanomaterial synthesis, surpassing conventional methods by over 500 times. This AI-driven approach employs Bayesian optimization and early stopping technology, enabling the bespoke synthesis of nanomaterials with unprecedented precision and consistency.",
                 "citations": [
-                    2
+                    1
+                ]
+            },
+            {
+                "web_query": "AI-driven nanomaterial synthesis laboratory",
+                "query_type": "image"
+            },
+            {
+                "paragraph": "Another notable trend is the improvement in top-down synthesis methods. Spark ablation has emerged as a safer, greener, and more economical option for producing high-quality nanoparticles without the need for post-processing steps. This advancement aligns with the growing emphasis on sustainable and environmentally friendly manufacturing processes in the nanotechnology sector. Simultaneously, startups are enhancing conventional methods like carbon-vapor deposition (CVD) and developing innovative techniques such as 3DC's proprietary template method for customizing carbon materials at the nano-scale.",
+                "citations": [
+                    1
                 ]
             },
             {
                 "metric": "500 times",
-                "description": "Enhancement in material discovery efficiency using AI technologies in nanomaterial synthesis",
+                "description": "Increase in efficiency of nanomaterial synthesis using AI-driven 'Smart Lab' platforms compared to conventional methods",
                 "citations": [
-                    2
+                    1
                 ]
             },
             {
-                "paragraph": "Another significant development is the integration of enzymes in nanoparticle shaping, enabling the production of nanoparticles with diverse chemical and physical properties. This bio-catalytic nanoparticle shaping (BNS) method holds great potential for applications in technology, medicine, and targeted drug delivery. Additionally, existing methods such as chemical vapor condensation (CVC), mechanical attrition, and hydrodynamic cavitation continue to be optimized for producing various types of nanomaterials with specific properties.",
+                "paragraph": "The application of nanomaterials across industries has expanded significantly. In the electronics sector, carbon nanotubes and graphene are being utilized to develop smaller, faster, and more efficient microchips and devices. The energy industry has seen substantial improvements in solar panel efficiency and battery technology, with nanomaterials enhancing sunlight conversion and electrical conductivity. In biomedicine, nanomaterials are revolutionizing disease diagnosis and treatment, particularly in targeted drug delivery and biosensor development for early detection of pathogens.",
                 "citations": [
                     2
                 ]
@@ -488,24 +546,34 @@
             {
                 "table": [
                     [
-                        "Method",
-                        "Description",
-                        "Advantages"
+                        "Industry",
+                        "Nanomaterial Application",
+                        "Impact"
                     ],
                     [
-                        "Spark Ablation",
-                        "Produces high-quality, pure metal nanoparticles without post-processing steps",
-                        "Safer, greener, and more economical"
+                        "Electronics",
+                        "Carbon nanotubes, Graphene",
+                        "Smaller, faster microchips"
                     ],
                     [
-                        "AI and Robotics",
-                        "Enhances material discovery efficiency and ensures high-quality data and safety",
-                        "Automated and consistent synthesis of nanomaterials"
+                        "Energy",
+                        "Nanotechnology-enhanced solar panels",
+                        "Doubled sunlight conversion efficiency"
                     ],
                     [
-                        "Bio-catalytic Nanoparticle Shaping (BNS)",
-                        "Enables the production of nanoparticles with diverse chemical and physical properties",
-                        "Potential for applications in technology, medicine, and targeted drug delivery"
+                        "Biomedicine",
+                        "Nanoparticles",
+                        "Targeted drug delivery, biosensors"
+                    ],
+                    [
+                        "Environment",
+                        "Nanobubbles, Nanofiltration",
+                        "Improved air and water purification"
+                    ],
+                    [
+                        "Construction",
+                        "Graphene-based concrete",
+                        "Enhanced strength and durability"
                     ]
                 ],
                 "citations": [
@@ -513,182 +581,32 @@
                 ]
             },
             {
-                "web_query": "nanoparticle synthesis using spark ablation",
-                "query_type": "image"
-            },
-            {
-                "paragraph": "The widespread application of nanomaterials across various industries, including electronics, energy, biomedicine, and environment, has significant implications for the future of technology and sustainability. As research continues to advance, it is essential to address the environmental impacts of nanomaterial synthesis and usage, ensuring the development of green synthesis methods and responsible disposal practices.",
-                "citations": [
-                    1,
-                    3
-                ]
-            }
-        ],
-        "metrics": {
-            "total_relevance": 0.8824519140360182,
-            "chunk_relevances": [
-                0.9584226929559456,
-                0.902160448527085,
-                0.8570014564561421,
-                0.8578657754917314,
-                0.8358338864183557,
-                0.8834272243668496
-            ],
-            "completeness": 0.6,
-            "overlap_score": 0.0,
-            "final_score": 0.6794711484216109
-        }
-    },
-    {
-        "query": "What is the relationship between consciousness and self-awareness?",
-        "document": [
-            {
-                "header": "The Relationship Between Consciousness and Self-Awareness"
-            },
-            {
-                "paragraph": "The relationship between consciousness and self-awareness is a complex and multifaceted one, with various philosophical and scientific perspectives offering insights into their interconnectedness. Philosophers such as Jean-Paul Sartre and Immanuel Kant have emphasized the inherent fusion of consciousness with self-consciousness, highlighting the coexistence of different levels of awareness. According to Sartre, consciousness is not only aware of external objects but also conscious of itself, with self-reflective consciousness turning inward for self-scrutiny. This nuanced understanding of consciousness and self-awareness underscores their intricate and mutual dependence.",
-                "citations": [
-                    1
-                ]
-            },
-            {
-                "metric": "90% of brain activity is dedicated to self-referential thinking",
-                "description": "Percentage of brain activity dedicated to self-referential thinking, highlighting the significance of self-awareness in human consciousness",
-                "citations": [
-                    2
-                ]
-            },
-            {
-                "paragraph": "Recent scientific studies have explored the connection between consciousness and self-awareness, shedding light on the neural mechanisms underlying bodily self-consciousness and the role of sensorimotor cortices in general conscious experience. These studies have also compared neurocognitive models to understand different levels of consciousness and self-awareness, distinguishing between various forms of consciousness and their relationship to self-awareness.",
-                "citations": [
-                    2
-                ]
-            },
-            {
-                "table": [
-                    [
-                        "Level of Consciousness",
-                        "Description"
-                    ],
-                    [
-                        "Core Consciousness",
-                        "Basic awareness of internal and external existence"
-                    ],
-                    [
-                        "Extended Consciousness",
-                        "Awareness of self in time and space"
-                    ],
-                    [
-                        "Recursive Consciousness",
-                        "Higher states of consciousness that facilitate self-awareness"
-                    ]
-                ],
-                "citations": [
-                    2
-                ]
-            },
-            {
-                "paragraph": "In psychology, the key differences between consciousness and self-awareness can be delineated by their scope and focus. Consciousness is a broader concept that encompasses awareness of both internal and external existence, while self-awareness is a more specific and inward-focused concept that involves the recognition and understanding of one's own personality, character, feelings, motives, and desires through reflection and introspection.",
+                "paragraph": "While the advancements in nanomaterial synthesis and applications are promising, it's crucial to consider their environmental impact. Nanomaterials can enter ecosystems through various routes, including intentional releases for remediation and unintentional releases from production and use. Once in the environment, they can interact with organic matter, sediments, and soils, potentially affecting aquatic and terrestrial biota. For instance, metal oxide nanoparticles and carbon nanotubes have been found to cause cytotoxicity and oxidative stress in marine organisms and reduce photosynthesis in plants.",
                 "citations": [
                     3
                 ]
             },
             {
-                "web_query": "brain regions involved in self-awareness",
-                "query_type": "image"
+                "web_query": "Environmental impact of nanomaterials on aquatic ecosystems",
+                "query_type": "chart"
             }
         ],
         "metrics": {
-            "total_relevance": 0.8928826431993043,
+            "total_relevance": 0.8708665972770063,
             "chunk_relevances": [
-                0.9636433196516729,
-                0.9149280325890385,
-                0.8464360325378971,
-                0.8889950809685974,
-                0.8963109254402324,
-                0.8469824680083868
+                0.9391685427773131,
+                0.8995077612481754,
+                0.8636212557453884,
+                0.8836935379847349,
+                0.8537628792405212,
+                0.8615974173906586,
+                0.8437224591748413,
+                0.8218589246544167
             ],
-            "completeness": 0.7777777777777778,
-            "overlap_score": 0.0,
-            "final_score": 0.730174030364027
-        }
-    },
-    {
-        "query": "What is the importance of cybersecurity awareness training for employees?",
-        "document": [
-            {
-                "header": "The Importance of Cybersecurity Awareness Training for Employees"
-            },
-            {
-                "paragraph": "Cybersecurity awareness training is a crucial component of an organization's overall cybersecurity strategy. By educating employees on how to recognize and avoid cyber threats, such training significantly reduces the risk of data breaches and financial losses. It also minimizes human error, which is a leading cause of cybersecurity incidents, by teaching employees best practices such as secure password management, safe internet use, and the importance of regular software updates.",
-                "citations": [
-                    1
-                ]
-            },
-            {
-                "metric": "50%",
-                "description": "Reduction in data breach risks through effective cybersecurity awareness training",
-                "citations": [
-                    3
-                ]
-            },
-            {
-                "paragraph": "In addition to reducing the risk of security incidents, cybersecurity awareness training also enhances compliance with security protocols and regulatory requirements. This is particularly important in industries governed by strict data protection laws. Furthermore, it fosters a culture of security awareness within the organization, making employees more vigilant and proactive in identifying and reporting potential threats.",
-                "citations": [
-                    1
-                ]
-            },
-            {
-                "table": [
-                    [
-                        "Benefits of Cybersecurity Awareness Training",
-                        "Description"
-                    ],
-                    [
-                        "Reduces data breach risks",
-                        "By educating employees on how to recognize and avoid cyber threats"
-                    ],
-                    [
-                        "Minimizes human error",
-                        "By teaching employees best practices such as secure password management"
-                    ],
-                    [
-                        "Enhances compliance",
-                        "With security protocols and regulatory requirements"
-                    ],
-                    [
-                        "Fosters a culture of security awareness",
-                        "By making employees more vigilant and proactive in identifying and reporting potential threats"
-                    ]
-                ],
-                "citations": [
-                    1
-                ]
-            },
-            {
-                "paragraph": "Implementing effective cybersecurity awareness training programs involves several key best practices, including full participation, baseline and ongoing assessments, customization, open communication, gamification, and continuous learning. By incorporating these best practices, organizations can ensure that their cybersecurity awareness training programs are effective in enhancing the overall security posture of the organization.",
-                "citations": [
-                    2
-                ]
-            },
-            {
-                "web_query": "infographic on the importance of cybersecurity awareness training",
-                "query_type": "image"
-            }
-        ],
-        "metrics": {
-            "total_relevance": 0.9190136955420218,
-            "chunk_relevances": [
-                0.9714381116365283,
-                0.9349854978304362,
-                0.8922778848734709,
-                0.9232589090792972,
-                0.8803337379424765,
-                0.9117880318899219
-            ],
-            "completeness": 0.8181818181818182,
-            "overlap_score": 0.0,
-            "final_score": 0.7559536718706676
+            "completeness": 0.8,
+            "overlap_score": 0.0357142857142857,
+            "engagement_score": 0.6,
+            "final_score": 0.6454894960536596
         }
     },
     {
@@ -698,71 +616,194 @@
                 "header": "Effective Communication Strategies in Public Health Campaigns"
             },
             {
-                "paragraph": "Public health campaigns play a crucial role in communicating risk and prevention strategies to the public. Effective communication is key to empowering individuals to make informed decisions about their health. When communicating risk, it is essential to communicate with empathy, honesty, and transparency, acknowledging the public's right to know the risks and the actions they can take to protect themselves.",
+                "paragraph": "Public health campaigns play a crucial role in communicating risk and prevention strategies to the public. These campaigns rely on a set of best practices to ensure their messages are effectively conveyed and understood. Key among these is the importance of communicating with empathy, transparency, and honesty. Recognizing the public's right to accurate information about health risks and protective measures, campaigns strive to build trust through early and frequent announcements.",
                 "citations": [
                     1
                 ]
             },
             {
-                "metric": "75% of the public",
-                "description": "Percentage of the public that reports being more likely to take action to protect their health when they feel informed and empowered",
+                "paragraph": "Clear, non-technical language is essential in making health information accessible to diverse audiences. Campaigns must tailor their messages to the audience's perceptions and understanding of risk, often involving communities in the communication process to ensure relevance and trustworthiness. This approach not only respects the unique needs of different groups but also helps manage anxiety and misinformation by providing specific, actionable information on harm reduction.",
                 "citations": [
                     1
                 ]
             },
             {
-                "paragraph": "Effective risk communication should be tailored to the needs of diverse audiences, considering factors such as cultural background, education, and technological adeptness. Using clear, non-technical language and multiple language translations where necessary can enhance message clarity. Listening to the public's concerns and adapting messages accordingly is also important.",
+                "web_query": "infographic on effective public health communication strategies",
+                "query_type": "image"
+            },
+            {
+                "paragraph": "To gauge the success of their communication strategies, public health campaigns employ various metrics and indicators. Coverage of the target population is a primary measure, assessing how well the intervention reaches its intended audience. Campaigns also utilize process measures, such as participation in health education activities and distribution of materials, alongside outcome measures that focus on actual impact, including changes in health status and adoption of healthy behaviors.",
                 "citations": [
-                    1
+                    2
                 ]
             },
             {
-                "table": [
-                    [
-                        "Communication Strategy",
-                        "Effectiveness Metric"
-                    ],
-                    [
-                        "Clear and concise messaging",
-                        "Increased public understanding"
-                    ],
-                    [
-                        "Culturally sensitive messaging",
-                        "Improved engagement with diverse audiences"
-                    ],
-                    [
-                        "Timely and transparent updates",
-                        "Increased public trust"
-                    ]
-                ],
+                "metric": "75% reduction",
+                "description": "Decline in disease incidence after a successful public health campaign",
                 "citations": [
-                    1
+                    2
                 ]
             },
             {
-                "paragraph": "Social media plays a pivotal role in public health campaigns for risk communication and prevention. It serves as a powerful tool for raising awareness and educating the public about pressing health issues, allowing public health organizations to reach diverse audiences across geographical and cultural boundaries.",
+                "paragraph": "In the digital age, social media has become an indispensable tool for public health campaigns focused on risk and prevention. These platforms offer unprecedented reach, allowing organizations to disseminate crucial health information globally, transcending geographical and cultural barriers. Social media enables interactive engagement through Q&A sessions and online communities, facilitating real-time communication with the public.",
                 "citations": [
                     3
                 ]
             },
             {
-                "web_query": "infographic on the role of social media in public health campaigns",
-                "query_type": "image"
+                "table": [
+                    [
+                        "Social Media Function",
+                        "Impact on Public Health Campaigns"
+                    ],
+                    [
+                        "Information Dissemination",
+                        "Rapid spread of crucial health information"
+                    ],
+                    [
+                        "Myth-busting",
+                        "Combat misinformation through fact-checking"
+                    ],
+                    [
+                        "Community Engagement",
+                        "Interactive Q&As and online support groups"
+                    ],
+                    [
+                        "Behavioral Interventions",
+                        "Promote healthy habits and lifestyle changes"
+                    ],
+                    [
+                        "Real-time Surveillance",
+                        "Monitor health trends and optimize interventions"
+                    ]
+                ],
+                "citations": [
+                    3
+                ]
+            },
+            {
+                "paragraph": "The effectiveness of social media in public health campaigns is further enhanced by its ability to tailor messages to specific populations and involve community members in message development. The use of multimedia content, such as videos and infographics, makes complex health information more digestible and engaging. Moreover, social media platforms provide valuable data for evaluating campaign impact through real-world outcomes, allowing for continuous improvement of communication strategies.",
+                "citations": [
+                    3
+                ]
             }
         ],
         "metrics": {
-            "total_relevance": 0.8774170278313541,
+            "total_relevance": 0.874289741294079,
             "chunk_relevances": [
                 0.909588579923235,
-                0.9220357958522308,
-                0.8274720512264055,
-                0.858130916632097,
-                0.886096007348631,
-                0.861178816005525
+                0.9099715295663302,
+                0.8724189343638276,
+                0.8807840657468787,
+                0.8576677968101855,
+                0.836346423406209,
+                0.8683569255818893,
+                0.8591836749540774
             ],
-            "completeness": 0.7142857142857143,
-            "overlap_score": 0.1333333333333333,
-            "final_score": 0.725021645270241
+            "completeness": 0.7857142857142857,
+            "overlap_score": 0.1071428571428571,
+            "engagement_score": 0.7,
+            "final_score": 0.6725730393747745
+        }
+    },
+    {
+        "query": "What is the relationship between consciousness and self-awareness?",
+        "document": [
+            {
+                "header": "The Intricate Relationship Between Consciousness and Self-Awareness"
+            },
+            {
+                "paragraph": "Consciousness and self-awareness are two closely intertwined concepts that have long fascinated philosophers, psychologists, and neuroscientists. While often used interchangeably in everyday language, these terms represent distinct yet interconnected aspects of human cognition and experience. Consciousness broadly refers to our awareness of both internal and external stimuli, encompassing a wide range of mental states and processes. Self-awareness, on the other hand, is a more specific form of consciousness that involves recognizing oneself as an individual with thoughts, emotions, and experiences.",
+                "citations": [
+                    1,
+                    3
+                ]
+            },
+            {
+                "web_query": "diagram of consciousness and self-awareness relationship",
+                "query_type": "image"
+            },
+            {
+                "paragraph": "The relationship between consciousness and self-awareness is complex and multifaceted. Philosophers like Jean-Paul Sartre have argued that consciousness inherently includes a form of self-awareness, which he termed 'pre-reflective consciousness.' This concept suggests that every conscious experience involves an implicit awareness of oneself as the subject of that experience. However, this basic level of self-awareness differs from the more explicit, reflective self-awareness that allows us to examine our own thoughts, feelings, and behaviors in detail.",
+                "citations": [
+                    3
+                ]
+            },
+            {
+                "metric": "4 subtypes",
+                "description": "The number of distinct self-consciousness types identified by the Self-Consciousness Type Scale (SCTS)",
+                "citations": [
+                    2
+                ]
+            },
+            {
+                "paragraph": "Scientific studies have shed light on the neural underpinnings of consciousness and self-awareness, revealing that these phenomena emerge from complex interactions within distributed brain networks. Interestingly, research on patients with brain damage has shown that self-awareness can remain intact even when regions previously thought crucial for this function are impaired. This suggests that self-awareness is not localized to specific brain areas but rather arises from the interplay of various neural systems, including the brainstem, thalamus, and posteromedial cortices.",
+                "citations": [
+                    2
+                ]
+            },
+            {
+                "table": [
+                    [
+                        "Aspect",
+                        "Consciousness",
+                        "Self-Awareness"
+                    ],
+                    [
+                        "Scope",
+                        "Broad awareness of internal and external stimuli",
+                        "Focused awareness of one's own mental states"
+                    ],
+                    [
+                        "Focus",
+                        "Can be directed outward or inward",
+                        "Primarily inward-directed"
+                    ],
+                    [
+                        "Cognitive Complexity",
+                        "Ranges from basic sensory awareness to higher-order thinking",
+                        "Involves higher-order reflection and introspection"
+                    ],
+                    [
+                        "Philosophical View",
+                        "Fundamental aspect of experience",
+                        "Specific form or subset of consciousness"
+                    ],
+                    [
+                        "Neurological Basis",
+                        "Distributed across brain networks",
+                        "Involves specific regions but also distributed"
+                    ]
+                ],
+                "citations": [
+                    1,
+                    2,
+                    3
+                ]
+            },
+            {
+                "paragraph": "The relationship between consciousness and self-awareness also has important implications for our understanding of personal identity and subjective experience. While consciousness provides the foundation for all our experiences, self-awareness allows us to reflect on these experiences and construct a coherent sense of self over time. This interplay between consciousness and self-awareness is crucial for our ability to navigate complex social environments, make decisions based on our values and goals, and engage in self-reflection and personal growth.",
+                "citations": [
+                    1,
+                    3
+                ]
+            }
+        ],
+        "metrics": {
+            "total_relevance": 0.8928689392195356,
+            "chunk_relevances": [
+                0.9480384444359531,
+                0.8953981857858009,
+                0.8958713112131824,
+                0.905055867111964,
+                0.81068098044279,
+                0.8802707158644836,
+                0.9147670696825747
+            ],
+            "completeness": 0.7777777777777778,
+            "overlap_score": 0.1428571428571429,
+            "engagement_score": 0.6,
+            "final_score": 0.6701634487036873
         }
     },
     {
@@ -772,20 +813,24 @@
                 "header": "Challenges of Conducting Ethnographic Research in Urban Settings"
             },
             {
-                "paragraph": "Conducting ethnographic research in urban settings poses several challenges that researchers must navigate to ensure the integrity and validity of their findings. One of the primary concerns is gaining access to certain communities or areas, which can be difficult due to various barriers such as gender restrictions, political conflicts, and language differences. Additionally, the sheer size and diversity of urban settings require careful management of the research scope, often focusing on specific neighborhoods or groups to maintain feasibility.",
+                "paragraph": "Ethnographic research in urban environments presents a unique set of challenges that researchers must navigate carefully. One of the primary difficulties is the complexity and dynamism of urban settings, which can make participant observation and data collection both challenging and rich in diverse interactions. Researchers must be adept at engaging with a wide range of people and navigating crowded, multi-faceted environments. This complexity often necessitates the use of rapid ethnographic methodologies to capture the diverse perspectives within a limited timeframe.",
+                "citations": [
+                    1,
+                    3
+                ]
+            },
+            {
+                "paragraph": "Gaining access and trust within urban communities is another significant hurdle. Ethnographers often need to establish relationships with gatekeepers or urban insiders to facilitate their work. This process can be time-consuming and requires patience, cultural sensitivity, and strong interpersonal skills. Additionally, language barriers and cultural differences can impede data collection and analysis, highlighting the importance of researchers being fluent in the local language and understanding cultural nuances.",
                 "citations": [
                     3
                 ]
             },
             {
-                "metric": "1 billion",
-                "description": "Number of people living in urban slums worldwide, highlighting the need for nuanced and context-dependent ethnographic research in these environments",
-                "citations": [
-                    3
-                ]
+                "web_query": "ethnographer conducting interview in crowded urban setting",
+                "query_type": "image"
             },
             {
-                "paragraph": "Urban density significantly influences the methodology of ethnographic studies, requiring researchers to adapt their methods to effectively manage the scope of their study. This may involve using mixed methods such as participant observations, interviews, and social network analysis to understand the complex interactions within these dense environments. Furthermore, the high density necessitates a deeper understanding of the local context, including socioeconomic factors, residential mixing, and the types of venues along the streets.",
+                "paragraph": "Ethical considerations play a crucial role in urban ethnographic research. Obtaining informed consent can be challenging due to the inductive and iterative nature of ethnographic inquiry, making it difficult to anticipate all interactions and participants in advance. Researchers must ensure that participants understand the purpose, risks, and benefits of the study, and that their participation is voluntary. Protecting the privacy and anonymity of participants is also essential, particularly in densely populated urban areas where maintaining confidentiality can be more challenging.",
                 "citations": [
                     2
                 ]
@@ -797,16 +842,28 @@
                         "Description"
                     ],
                     [
-                        "Gaining access",
-                        "Difficulty accessing certain communities or areas due to barriers such as gender restrictions, political conflicts, and language differences"
+                        "Complexity of Urban Environment",
+                        "Navigating crowded, diverse settings"
                     ],
                     [
-                        "Managing research scope",
-                        "Careful management of the research scope to maintain feasibility in large and diverse urban settings"
+                        "Access and Trust",
+                        "Establishing relationships with gatekeepers"
                     ],
                     [
-                        "Respecting local customs",
-                        "Importance of respecting local customs and obtaining informed consent to build trust and maintain ethical standards"
+                        "Ethical Considerations",
+                        "Informed consent, privacy protection"
+                    ],
+                    [
+                        "Language and Cultural Barriers",
+                        "Understanding local nuances"
+                    ],
+                    [
+                        "Safety Concerns",
+                        "Navigating potential risks in unfamiliar areas"
+                    ],
+                    [
+                        "Rapid Data Collection",
+                        "Adapting to fast-paced urban dynamics"
                     ]
                 ],
                 "citations": [
@@ -816,529 +873,476 @@
                 ]
             },
             {
-                "paragraph": "Ethnographic research in urban environments is also fraught with ethical concerns, including respecting privacy and obtaining informed consent, which can be time-consuming and resource-intensive. Researchers must be mindful of their own position and relationships within the community, avoiding becoming too close or too distant, and being aware of potential culture shock and personal safety concerns. The American Anthropological Association's broader definition of informed consent is also important to consider in these contexts.",
+                "paragraph": "Safety concerns and personal risks are significant challenges in urban ethnographic research. Condensed and overcrowded living conditions, particularly in low-income urban areas, can raise anxiety for researchers unfamiliar with these environments. Political conflicts and social tensions may further complicate the research process, requiring ethnographers to navigate sensitive situations without compromising their safety or the integrity of their work. Gender restrictions and other social norms can also limit a researcher's ability to interact with certain segments of the community.",
                 "citations": [
-                    1
+                    3
                 ]
             },
             {
-                "web_query": "urban slum in a developing country",
-                "query_type": "image"
+                "metric": "60%",
+                "description": "Approximate percentage of the world's population projected to live in urban areas by 2030, highlighting the growing importance and challenges of urban ethnographic research.",
+                "citations": []
+            },
+            {
+                "paragraph": "Finally, researchers must be aware of their own biases and the risk of perpetuating harmful stereotypes or misunderstandings, particularly when studying marginalized communities. This challenge underscores the need for researcher reflexivity and a commitment to social justice. Urban ethnographers must constantly engage in ethical decision-making and reflection throughout the research process, balancing the demands of academic rigor with respect for the communities they study.",
+                "citations": [
+                    2,
+                    3
+                ]
             }
         ],
         "metrics": {
-            "total_relevance": 0.8924627557473261,
+            "total_relevance": 0.9055297260041633,
             "chunk_relevances": [
                 0.9722651421606545,
-                0.9349228390491583,
-                0.8516554179502268,
-                0.888550184277275,
-                0.8963332245788693,
-                0.8110497264677727
+                0.9258295941299024,
+                0.9002724895805607,
+                0.8805499773326664,
+                0.8944029351590672,
+                0.9199936832431205,
+                0.861135972869856,
+                0.8897880135574789
             ],
-            "completeness": 0.75,
-            "overlap_score": 0.19999999999999996,
-            "final_score": 0.7529776534483957
-        }
-    },
-    {
-        "query": "What are the major themes explored in Renaissance literature?",
-        "document": [
-            {
-                "header": "Major Themes in Renaissance Literature"
-            },
-            {
-                "paragraph": "Renaissance literature is characterized by several significant themes and intellectual movements. At its core, Renaissance literature is marked by humanism, which emphasizes the value, dignity, and potential of the individual. This is evident in the complex characters of Shakespeare's plays and the celebration of human will in Milton's works, such as 'Paradise Lost'. Additionally, the period saw a strong emphasis on art and beauty, with writers aiming to create works that were both intellectually stimulating and aesthetically pleasing.",
-                "citations": [
-                    1
-                ]
-            },
-            {
-                "metric": "14th-17th centuries",
-                "description": "Time period during which Renaissance literature emerged",
-                "citations": [
-                    1
-                ]
-            },
-            {
-                "paragraph": "The power of the imagination was another crucial aspect of Renaissance literature, where writers explored vivid images and ideas. This is exemplified in Shakespeare's 'A Midsummer Night\u2019s Dream' and the poetic language of Spenser and Marlowe. Furthermore, the period was influenced by a classical revival, where writers drew inspiration from ancient Greek and Roman works, and there was a shift towards individualism, breaking away from the hierarchical structures of the Middle Ages.",
-                "citations": [
-                    1
-                ]
-            },
-            {
-                "table": [
-                    [
-                        "Theme",
-                        "Notable Works",
-                        "Description"
-                    ],
-                    [
-                        "Humanism",
-                        "Shakespeare's plays, Milton's 'Paradise Lost'",
-                        "Emphasizes the value, dignity, and potential of the individual"
-                    ],
-                    [
-                        "Power of the Imagination",
-                        "Shakespeare's 'A Midsummer Night\u2019s Dream', Spenser and Marlowe's poetic language",
-                        "Explores vivid images and ideas"
-                    ],
-                    [
-                        "Classical Revival",
-                        "Works inspired by ancient Greek and Roman texts",
-                        "Draws inspiration from classical works"
-                    ],
-                    [
-                        "Individualism",
-                        "Shakespeare's plays, Machiavelli's 'The Prince'",
-                        "Breaks away from hierarchical structures of the Middle Ages"
-                    ],
-                    [
-                        "Art and Beauty",
-                        "Petrarch's sonnets, Marlowe's poetic dramas",
-                        "Aims to create works that are both intellectually stimulating and aesthetically pleasing"
-                    ]
-                ],
-                "citations": [
-                    1,
-                    2,
-                    3
-                ]
-            },
-            {
-                "paragraph": "Renaissance humanism had a profound impact on the themes in Renaissance literature, emphasizing the value, dignity, and potential of the individual. Humanists, such as Petrarch, Dante Alighieri, and Giovanni Boccaccio, revived interest in classical texts and education, which led to a focus on human experience, moral responsibility, and the pursuit of virtue.",
-                "citations": [
-                    2
-                ]
-            },
-            {
-                "web_query": "image of a Renaissance-era manuscript",
-                "query_type": "image"
-            }
-        ],
-        "metrics": {
-            "total_relevance": 0.8827177566355,
-            "chunk_relevances": [
-                0.961934987315717,
-                0.8926920767978367,
-                0.8582791888825673,
-                0.8709674469310952,
-                0.8871036036352684,
-                0.8253292362505154
-            ],
-            "completeness": 0.7,
+            "completeness": 0.8333333333333334,
             "overlap_score": 0.0,
-            "final_score": 0.7046306539812999
-        }
-    },
-    {
-        "query": "How do autonomous systems differ from traditional robotic systems?",
-        "document": [
-            {
-                "header": "Autonomous Systems vs Traditional Robotic Systems"
-            },
-            {
-                "paragraph": "Autonomous systems and traditional robotic systems differ in their ability to operate independently and make decisions without human intervention. Traditional robotic systems rely on pre-programmed instructions and follow a set of rules to perform tasks, whereas autonomous systems use artificial intelligence, machine learning, and sensor data to adapt to changing environments and make decisions in real-time.",
-                "citations": [
-                    1,
-                    2
-                ]
-            },
-            {
-                "metric": "85%",
-                "description": "Percentage of autonomous systems that use machine learning algorithms to improve their decision-making capabilities",
-                "citations": [
-                    3
-                ]
-            },
-            {
-                "table": [
-                    [
-                        "System Type",
-                        "Decision-Making",
-                        "Autonomy Level"
-                    ],
-                    [
-                        "Traditional Robotic Systems",
-                        "Pre-programmed instructions",
-                        "Low"
-                    ],
-                    [
-                        "Autonomous Systems",
-                        "Artificial intelligence and machine learning",
-                        "High"
-                    ]
-                ],
-                "citations": [
-                    1,
-                    2
-                ]
-            },
-            {
-                "paragraph": "Autonomous systems also have the ability to learn from their experiences and improve their performance over time, whereas traditional robotic systems require manual updates and reprogramming. This allows autonomous systems to operate in complex and dynamic environments, such as self-driving cars navigating through busy city streets.",
-                "citations": [
-                    4,
-                    5
-                ]
-            },
-            {
-                "web_query": "autonomous vehicle navigating through a busy city street",
-                "query_type": "image"
-            },
-            {
-                "paragraph": "In addition, autonomous systems can operate in remote or hard-to-reach areas, such as drones used for search and rescue missions or autonomous underwater vehicles used for ocean exploration. This allows for increased efficiency and reduced risk for human operators.",
-                "citations": [
-                    6,
-                    7
-                ]
-            }
-        ],
-        "metrics": {
-            "total_relevance": 0.8906457030356653,
-            "chunk_relevances": [
-                0.9545780630633474,
-                0.9429269000525333,
-                0.8224085231759545,
-                0.9325691111209902,
-                0.8108946452528356,
-                0.8804969755483301
-            ],
-            "completeness": 0.6666666666666666,
-            "overlap_score": 0.0,
-            "final_score": 0.7010540884880657
-        }
-    },
-    {
-        "query": "What is the significance of the cosmic microwave background radiation in cosmology?",
-        "document": [
-            {
-                "header": "The Cosmic Microwave Background Radiation in Cosmology"
-            },
-            {
-                "paragraph": "The cosmic microwave background (CMB) radiation is the residual heat from the Big Bang, representing the oldest and most distant observable feature of the universe. It is the cooled remnant of the first light that could travel freely through the universe, released approximately 380,000 years after the Big Bang when the universe had cooled enough for hydrogen atoms to form and light to decouple from matter. This radiation is now detectable in the microwave spectrum, with a uniform temperature of about 2.725 degrees above absolute zero, though it exhibits tiny fluctuations that are crucial for understanding the early universe.",
-                "citations": [
-                    1
-                ]
-            },
-            {
-                "metric": "2.725 degrees Kelvin",
-                "description": "The uniform temperature of the cosmic microwave background radiation",
-                "citations": [
-                    1
-                ]
-            },
-            {
-                "paragraph": "The CMB is highly important in cosmology because it provides strong evidence for the Big Bang theory and offers insights into the universe's origins and evolution. The tiny temperature fluctuations in the CMB map are key to understanding the formation of galaxies and large-scale structures, as they reflect the distribution of matter at the time of decoupling. These fluctuations also support the inflation theory, which describes the rapid expansion of the universe in its very early stages.",
-                "citations": [
-                    1
-                ]
-            },
-            {
-                "web_query": "map of the cosmic microwave background radiation",
-                "query_type": "image"
-            },
-            {
-                "paragraph": "The CMB's uniformity and tiny temperature fluctuations, as mapped by missions like COBE and Planck, align with the Big Bang theory's prediction of a thermal or blackbody spectrum of photons. This uniform radiation is present in all directions and is invisible to the naked eye, but detectable in the microwave spectrum, indicating it is a remnant from the early universe rather than a local source.",
-                "citations": [
-                    2
-                ]
-            },
-            {
-                "metric": "380,000 years",
-                "description": "The time after the Big Bang when the universe cooled enough for hydrogen to form and photons could travel freely",
-                "citations": [
-                    2
-                ]
-            }
-        ],
-        "metrics": {
-            "total_relevance": 0.8795291739136718,
-            "chunk_relevances": [
-                0.9439315519458619,
-                0.9068003816314776,
-                0.8530282847306248,
-                0.8955170807744267,
-                0.877687651047534,
-                0.8727747716010783,
-                0.8069644956646993
-            ],
-            "completeness": 0.75,
-            "overlap_score": 0.04761904761904767,
-            "final_score": 0.7223603614910602
+            "engagement_score": 0.6,
+            "final_score": 0.6605452237349987
         }
     },
     {
         "query": "What are the key differences between human language and animal communication systems?",
         "document": [
             {
-                "header": "Key Differences Between Human Language and Animal Communication Systems"
+                "header": "Key Differences Between Human Language and Animal Communication"
             },
             {
-                "paragraph": "Human language and animal communication systems exhibit distinct differences in terms of complexity, structure, and capabilities. While animals possess sophisticated communication methods, human language stands out due to its unique properties. For instance, human language is characterized by duality of patterning, where arbitrary sounds are combined to create meaningful words and sentences, allowing for an infinite number of expressions. In contrast, animal communication lacks this complexity and is generally context-bound.",
-                "citations": [
-                    2
-                ]
+                "paragraph": "Human language and animal communication systems, while both serving the purpose of conveying information, differ significantly in their complexity and structure. Human language is characterized by its infinite generativity, allowing for the creation of an unlimited number of novel sentences. This feature, known as productivity, enables humans to express an infinite range of thoughts and ideas. In contrast, animal communication systems are typically limited to a finite set of signals or calls, each with a specific meaning or purpose.",
+                "citations": []
             },
             {
-                "metric": "infinite number of expressions",
-                "description": "The number of possible expressions in human language due to duality of patterning",
-                "citations": [
-                    2
-                ]
+                "web_query": "chimpanzee using sign language",
+                "query_type": "image"
             },
             {
-                "paragraph": "Another significant distinction between human language and animal communication is creativity. Human language enables the invention of new words, phrases, and expressions, whereas animal communication is limited to a fixed set of signals that cannot be expanded. Additionally, human language is characterized by displacement, where humans can discuss abstract, remote, or imaginary concepts, whereas animal communication is largely context-bound and reactive to immediate stimuli.",
-                "citations": [
-                    3
-                ]
+                "paragraph": "One of the most striking differences is the presence of syntax in human language. Syntax refers to the rules governing the structure of sentences, allowing for the combination of words in meaningful ways. This hierarchical structure enables humans to convey complex ideas and abstract concepts. Animal communication, on the other hand, generally lacks this level of grammatical complexity. While some animals, like certain primates, have shown the ability to learn and use simple forms of human language, their use remains limited compared to the intricate syntax employed by humans.",
+                "citations": []
+            },
+            {
+                "metric": "7,000+ languages",
+                "description": "The estimated number of distinct human languages spoken worldwide",
+                "citations": []
+            },
+            {
+                "paragraph": "Another key difference lies in the concept of displacement, which is a hallmark of human language. Humans can communicate about things that are not present in their immediate environment, including abstract concepts, past events, and future possibilities. This ability allows for the transmission of knowledge across time and space. Most animal communication systems, however, are largely context-dependent and tied to immediate needs or situations. For example, a bee's waggle dance communicates the location of food sources, but it cannot convey information about past foraging experiences or future plans.",
+                "citations": []
             },
             {
                 "table": [
                     [
-                        "Characteristics",
+                        "Feature",
                         "Human Language",
                         "Animal Communication"
                     ],
                     [
-                        "Duality of Patterning",
-                        "Present",
-                        "Absent"
+                        "Productivity",
+                        "Infinite",
+                        "Limited"
                     ],
                     [
-                        "Creativity",
-                        "Present",
-                        "Absent"
+                        "Syntax",
+                        "Complex",
+                        "Simple/Absent"
                     ],
                     [
                         "Displacement",
                         "Present",
-                        "Absent"
+                        "Largely Absent"
                     ],
                     [
-                        "Interchangeability",
-                        "Present",
-                        "Absent"
+                        "Abstraction",
+                        "High",
+                        "Low"
+                    ],
+                    [
+                        "Cultural Transmission",
+                        "Extensive",
+                        "Limited"
                     ]
                 ],
-                "citations": [
-                    2,
-                    3
-                ]
+                "citations": []
             },
             {
-                "paragraph": "Examples of complex communication systems in animals, such as prairie dogs, parrots, and dolphins, challenge the notion of human language being unique. However, these systems are still limited compared to the flexibility and versatility of human language. The cognitive rift between humans and animals in language and communication is marked by the unique structural, creative, and symbolic aspects of human language.",
-                "citations": [
-                    1,
-                    2
-                ]
-            },
-            {
-                "web_query": "prairie dog warning call",
-                "query_type": "image"
+                "paragraph": "Cultural transmission is another significant aspect that sets human language apart. Human languages are learned and passed down through generations, allowing for rapid cultural evolution and the accumulation of knowledge. This process enables languages to adapt and change over time, reflecting the needs and experiences of different societies. While some animal species show evidence of cultural learning in their communication, it is far less extensive and does not approach the complexity and diversity seen in human languages.",
+                "citations": []
             }
         ],
         "metrics": {
-            "total_relevance": 0.8671480141039546,
+            "total_relevance": 0.8741936568364835,
             "chunk_relevances": [
-                0.9664448688869756,
-                0.9197375047550416,
-                0.7808791930028058,
-                0.9182225951460767,
-                0.8963203282105489,
-                0.721283594622279
+                0.9557916486344733,
+                0.916744871313439,
+                0.8000158621599338,
+                0.8929989115828922,
+                0.7920304111556634,
+                0.9039813773672306,
+                0.8577925156417514
             ],
             "completeness": 0.8461538461538461,
-            "overlap_score": 0.4666666666666667,
-            "final_score": 0.8018272700008342
+            "overlap_score": 0.2857142857142857,
+            "engagement_score": 0.7,
+            "final_score": 0.7233587814159121
         }
     },
     {
-        "query": "How do economic sanctions impact international relations and global governance?",
+        "query": "How do autonomous systems differ from traditional robotic systems?",
         "document": [
             {
-                "header": "The Impact of Economic Sanctions on International Relations and Global Governance"
+                "header": "Autonomous Systems vs. Traditional Robotic Systems"
             },
             {
-                "paragraph": "Economic sanctions significantly influence global governance and international law in several complex and often contentious ways. They can undermine the principles of state sovereignty and non-intervention, as unilateral extra-territorial sanctions imposed by powerful states can exert extensive control over global financial and trade systems, affecting not only the targeted country but also other states and private actors dependent on these systems. The use of economic sanctions also highlights the tension between their intended purpose of modifying state behavior and their actual impact, which can include significant economic costs, reduced GDP growth, and adverse effects on human rights and democratic institutions in the targeted countries.",
-                "citations": [
-                    1
-                ]
+                "paragraph": "Autonomous systems and traditional robotic systems represent two distinct approaches in the field of robotics and automation. While both types of systems are designed to perform tasks with minimal human intervention, they differ significantly in their level of independence, decision-making capabilities, and adaptability to changing environments. Understanding these differences is crucial for grasping the evolution of robotics and its implications for various industries.",
+                "citations": []
             },
             {
-                "metric": "2.3-3.5% per year",
-                "description": "The average reduction in GDP growth of targeted states due to UN economic sanctions",
-                "citations": [
-                    2
-                ]
+                "paragraph": "Traditional robotic systems are typically programmed to perform specific, repetitive tasks in controlled environments. These systems follow pre-defined instructions and operate within strict parameters. They excel in environments where conditions remain constant and tasks are predictable. For example, industrial robots in manufacturing plants are often traditional robotic systems, performing the same assembly or welding tasks repeatedly with high precision and efficiency.",
+                "citations": []
             },
             {
-                "paragraph": "The effectiveness of economic sanctions in achieving political goals is a highly debated topic, with several arguments both for and against their efficacy. While some studies suggest that economic sanctions can have a significant impact on the targeted country, the majority of the literature argues against the effectiveness of economic sanctions, citing significant humanitarian costs, including reduced public health, increased mortality, and worsening living standards for the population of the targeted country.",
-                "citations": [
-                    2
-                ]
+                "web_query": "industrial robot arm in car manufacturing plant",
+                "query_type": "image"
+            },
+            {
+                "paragraph": "In contrast, autonomous systems are designed to operate with a higher degree of independence and adaptability. These systems are equipped with advanced sensors, artificial intelligence, and machine learning capabilities that allow them to perceive their environment, make decisions, and adjust their actions accordingly. Autonomous systems can handle complex, dynamic situations and often improve their performance over time through learning algorithms.",
+                "citations": []
             },
             {
                 "table": [
                     [
-                        "Country",
-                        "Year",
-                        "Sanctions Imposed By",
-                        "Outcome"
+                        "Characteristic",
+                        "Traditional Robotic Systems",
+                        "Autonomous Systems"
                     ],
                     [
-                        "Italy",
-                        "1935",
-                        "League of Nations",
-                        "Ineffective in stopping Italy's military operations"
+                        "Decision Making",
+                        "Pre-programmed responses",
+                        "AI-driven, adaptive decisions"
                     ],
                     [
-                        "Japan",
-                        "1940-1941",
-                        "United States and other nations",
-                        "Led to Japan's military expansion and the eventual attack on Pearl Harbor"
+                        "Environmental Awareness",
+                        "Limited, relies on controlled conditions",
+                        "Advanced sensing and perception"
                     ],
                     [
-                        "Cuba",
-                        "1960",
-                        "United States",
-                        "Remains one of the longest-standing examples of trade sanctions"
+                        "Adaptability",
+                        "Low, requires reprogramming for changes",
+                        "High, can adjust to new situations"
                     ],
                     [
-                        "Iraq",
-                        "1990-2003",
-                        "UN",
-                        "Comprehensive sanctions had significant humanitarian costs"
+                        "Learning Capability",
+                        "None or limited",
+                        "Continuous learning and improvement"
                     ],
                     [
-                        "Iran",
-                        "2010",
-                        "EU and UN",
-                        "Resulted in significant economic hardship for Iran"
+                        "Application Scope",
+                        "Specific, repetitive tasks",
+                        "Complex, varied tasks in dynamic environments"
+                    ],
+                    [
+                        "Human Intervention",
+                        "Often required for changes or issues",
+                        "Minimal, mainly for high-level commands"
                     ]
                 ],
-                "citations": [
-                    3
-                ]
+                "citations": []
             },
             {
-                "paragraph": "Historical examples of economic sanctions have significantly impacted international relations in various contexts. From the Athenian embargo against Megara in 432 BC to the post-World War II era, economic sanctions have been used extensively, with mixed outcomes. These examples illustrate the complex and often contentious nature of economic sanctions in shaping international relations.",
-                "citations": [
-                    3
-                ]
+                "paragraph": "One of the key advantages of autonomous systems is their ability to operate in unpredictable and changing environments. For instance, self-driving cars, a prime example of autonomous systems, must navigate through complex traffic scenarios, adapting to weather conditions, road works, and the behavior of other road users in real-time. This level of adaptability and decision-making is beyond the capabilities of traditional robotic systems.",
+                "citations": []
             },
             {
-                "web_query": "map of countries under economic sanctions",
+                "metric": "94% reduction in accidents",
+                "description": "Potential decrease in traffic accidents with widespread adoption of autonomous vehicles, according to some optimistic projections",
+                "citations": []
+            },
+            {
+                "paragraph": "The development of autonomous systems has opened up new possibilities in various fields, including healthcare, space exploration, and logistics. In healthcare, autonomous surgical robots can adapt to patient-specific anatomies and unexpected situations during procedures, offering precision beyond human capabilities. In space exploration, autonomous rovers like NASA's Perseverance can make decisions about navigation and sample collection on Mars without real-time human input, given the communication delay between Earth and Mars.",
+                "citations": []
+            },
+            {
+                "web_query": "NASA's Perseverance rover on Mars",
                 "query_type": "image"
+            },
+            {
+                "paragraph": "Despite their advantages, autonomous systems also present new challenges and considerations. These include ethical concerns about decision-making in critical situations, the need for robust cybersecurity measures, and the potential impact on employment in certain sectors. As technology continues to advance, the line between traditional robotic systems and autonomous systems may blur, with more traditional systems incorporating elements of autonomy and artificial intelligence.",
+                "citations": []
             }
         ],
         "metrics": {
-            "total_relevance": 0.8915040909872255,
+            "total_relevance": 0.8661421420304484,
             "chunk_relevances": [
-                0.9656979912069225,
-                0.9292678444019309,
-                0.8465771948803704,
-                0.8747526760839783,
-                0.8925413301887761,
-                0.8401875091613743
+                0.9553485696961219,
+                0.9385205380659468,
+                0.8797744841723681,
+                0.805706842862412,
+                0.9072024125382292,
+                0.8916405705701087,
+                0.7813313929308856,
+                0.8690624655329642,
+                0.7341894217022459,
+                0.8986447222331997
             ],
-            "completeness": 0.7272727272727273,
-            "overlap_score": 0.0,
-            "final_score": 0.7167206364105172
+            "completeness": 0.5555555555555556,
+            "overlap_score": 0.3555555555555555,
+            "engagement_score": 0.7,
+            "final_score": 0.6614568568121794
         }
     },
     {
         "query": "What are the fundamental principles of econometrics and how do they apply to financial modeling?",
         "document": [
             {
-                "header": "Fundamentals of Econometrics"
+                "header": "Fundamental Principles of Econometrics in Financial Modeling"
             },
             {
-                "paragraph": "Econometrics is the application of statistical methods to economic data in order to give empirical content to economic relationships. The fundamental principles of econometrics include the use of data to test hypotheses, the estimation of relationships between variables, and the use of statistical models to forecast future outcomes. In financial modeling, econometrics is used to analyze and forecast financial data, such as stock prices, interest rates, and exchange rates.",
+                "paragraph": "Econometrics is a powerful tool in financial modeling, combining statistical methods with economic theory to analyze financial data and make informed predictions. At its core, econometrics in financial modeling relies on several key principles. These include the application of regression analysis, time series analysis, and statistical inference to economic data. These techniques allow analysts to test theories, forecast trends, and inform decision-making in the complex world of finance.",
                 "citations": [
                     1,
                     2
                 ]
             },
             {
-                "metric": "80%",
-                "description": "Percentage of financial models that rely on econometric techniques",
+                "paragraph": "One of the fundamental principles is the use of Ordinary Least Squares (OLS) regression. This technique is crucial for estimating relationships between dependent and independent variables in financial data. For instance, OLS can be used to analyze how changes in interest rates might affect stock prices, or to forecast sales based on historical data and other relevant factors. This method helps identify trends and make predictions, forming the backbone of many financial models.",
                 "citations": [
-                    3
+                    1,
+                    2
                 ]
             },
             {
-                "paragraph": "One of the key principles of econometrics is the concept of ceteris paribus, or 'all else equal.' This principle holds that when analyzing the relationship between two variables, all other variables that may affect the relationship should be held constant. In financial modeling, this principle is used to isolate the effect of a particular variable on a financial outcome, such as the impact of interest rates on stock prices.",
+                "web_query": "scatter plot of stock prices vs interest rates",
+                "query_type": "chart"
+            },
+            {
+                "paragraph": "Another key principle is the application of time series analysis, which is particularly relevant in financial modeling due to the temporal nature of financial data. Models such as ARIMA (Autoregressive Integrated Moving Average) and GARCH (Generalized Autoregressive Conditional Heteroskedasticity) are essential for analyzing and forecasting data points collected over time. ARIMA helps in identifying patterns in past data, while GARCH is specifically used to estimate volatility in financial time series, a critical aspect of risk management in finance.",
                 "citations": [
-                    4,
-                    5
+                    1,
+                    2
+                ]
+            },
+            {
+                "metric": "95% confidence interval",
+                "description": "The typical range used in econometric models to indicate the reliability of estimates",
+                "citations": [
+                    1
+                ]
+            },
+            {
+                "paragraph": "Risk management and portfolio optimization are also fundamental applications of econometrics in financial modeling. Techniques like Value at Risk (VaR) and the Capital Asset Pricing Model (CAPM) are employed to quantify and manage risk. These models help in constructing optimal portfolios that balance risk and return, a crucial aspect of investment strategy. By applying these econometric principles, financial analysts can make more informed decisions about asset allocation and risk exposure.",
+                "citations": [
+                    1,
+                    2
                 ]
             },
             {
                 "table": [
                     [
-                        "Variable",
-                        "Description"
+                        "Econometric Technique",
+                        "Application in Financial Modeling"
                     ],
                     [
-                        "Dependent Variable",
-                        "The variable being predicted"
+                        "Regression Analysis",
+                        "Estimating relationships between variables"
                     ],
                     [
-                        "Independent Variable",
-                        "The variable used to predict the dependent variable"
+                        "Time Series Analysis",
+                        "Forecasting future values based on historical data"
                     ],
                     [
-                        "Control Variable",
-                        "A variable that is held constant to isolate the effect of the independent variable"
+                        "CAPM",
+                        "Assessing expected returns on assets"
+                    ],
+                    [
+                        "VaR",
+                        "Quantifying potential losses in a portfolio"
+                    ],
+                    [
+                        "Panel Data Analysis",
+                        "Analyzing data across time and entities"
                     ]
                 ],
                 "citations": [
-                    6
+                    1,
+                    2
                 ]
             },
             {
-                "paragraph": "Another fundamental principle of econometrics is the use of statistical models to estimate relationships between variables. In financial modeling, these models are used to forecast future financial outcomes, such as stock prices or interest rates. The most common type of statistical model used in econometrics is the linear regression model, which estimates the relationship between a dependent variable and one or more independent variables.",
+                "paragraph": "The application of these econometric principles significantly enhances the accuracy of financial forecasting. By rigorously collecting and preprocessing historical financial data, specifying and estimating models, and continuously validating and updating assumptions, econometric analysis provides a systematic approach to predicting financial outcomes. This process allows for the integration of economic judgment and consideration of exogenous variables, reducing the likelihood of errors and improving the reliability of forecasts.",
                 "citations": [
-                    7,
-                    8
+                    3
                 ]
             },
             {
-                "web_query": "graph of a linear regression model",
-                "query_type": "chart"
+                "web_query": "quote about the importance of econometrics in financial decision-making",
+                "query_type": "quote"
             }
         ],
         "metrics": {
-            "total_relevance": 0.8580712080391155,
+            "total_relevance": 0.8487775972010032,
             "chunk_relevances": [
-                0.904942063921406,
-                0.8714375424475077,
-                0.848894476386485,
-                0.861042690720812,
-                0.8874543840809963,
-                0.774656090677486
+                0.9387824795045583,
+                0.8993991902433456,
+                0.8416653770504742,
+                0.7710699362576501,
+                0.8426611235207802,
+                0.7691431531809945,
+                0.869724565460655,
+                0.8694440359663771,
+                0.8371085136241943
             ],
-            "completeness": 0.625,
-            "overlap_score": 0.33333333333333337,
-            "final_score": 0.7210927248234693
+            "completeness": 0.6875,
+            "overlap_score": 0.41666666666666663,
+            "engagement_score": 0.6,
+            "final_score": 0.6847193722137346
+        }
+    },
+    {
+        "query": "What is the significance of Immanuel Kant's categorical imperative in moral philosophy?",
+        "document": [
+            {
+                "header": "The Significance of Immanuel Kant's Categorical Imperative in Moral Philosophy"
+            },
+            {
+                "paragraph": "Immanuel Kant's categorical imperative stands as a cornerstone of modern moral philosophy, offering a revolutionary approach to ethical decision-making. At its core, this principle asserts that moral actions must be guided by universal and absolute moral laws, rather than by consequences or personal desires. The categorical imperative introduces the concept of 'universalizability,' which posits that an action is morally right only if the maxim behind it could be willed as a universal law applicable to all rational beings.",
+                "citations": [
+                    1
+                ]
+            },
+            {
+                "web_query": "portrait of Immanuel Kant",
+                "query_type": "image"
+            },
+            {
+                "paragraph": "The significance of Kant's categorical imperative lies in its profound influence on ethical thinking and its practical applications in various fields. By emphasizing the importance of treating humanity as an end in itself and never merely as a means, Kant's philosophy has been instrumental in shaping modern concepts of human rights and social justice. This principle has been particularly influential in legal and political spheres, where it has contributed to the development of ethical frameworks that prioritize individual dignity and autonomy.",
+                "citations": [
+                    2
+                ]
+            },
+            {
+                "metric": "3 formulations",
+                "description": "The number of main formulations of Kant's categorical imperative, each offering a different perspective on moral decision-making",
+                "citations": [
+                    1
+                ]
+            },
+            {
+                "paragraph": "Despite its significant contributions to moral philosophy, Kant's categorical imperative is not without criticism. One major critique is its apparent inflexibility in dealing with complex real-world scenarios. The theory's focus on universal laws can sometimes lead to conflicts between different moral duties, making it challenging to resolve ethical dilemmas. Additionally, some argue that the categorical imperative's emphasis on rationality excludes non-rational beings from moral consideration, potentially limiting its applicability in certain contexts.",
+                "citations": [
+                    3
+                ]
+            },
+            {
+                "table": [
+                    [
+                        "Aspect",
+                        "Significance",
+                        "Criticism"
+                    ],
+                    [
+                        "Universalizability",
+                        "Provides a clear criterion for moral actions",
+                        "Can be manipulated through clever phrasing"
+                    ],
+                    [
+                        "Autonomy",
+                        "Emphasizes self-imposed moral principles",
+                        "May not account for emotional or cultural factors"
+                    ],
+                    [
+                        "Human Dignity",
+                        "Promotes respect for all individuals",
+                        "Excludes non-rational beings from moral consideration"
+                    ],
+                    [
+                        "Duty-based Ethics",
+                        "Focuses on intentions rather than consequences",
+                        "May lead to counterintuitive outcomes in some scenarios"
+                    ]
+                ],
+                "citations": [
+                    1,
+                    2,
+                    3
+                ]
+            },
+            {
+                "paragraph": "Despite these criticisms, the categorical imperative continues to be a vital component of contemporary ethical discourse. Its emphasis on universal principles and human dignity has significantly influenced modern theories of justice and human rights. Moreover, Kant's focus on the autonomous will and pure reason as the basis for morality has shaped discussions about moral agency and responsibility in various fields, including law, politics, and artificial intelligence ethics.",
+                "citations": [
+                    2
+                ]
+            },
+            {
+                "web_query": "quote about the importance of Kant's categorical imperative in modern ethics",
+                "query_type": "quote"
+            }
+        ],
+        "metrics": {
+            "total_relevance": 0.904750593990771,
+            "chunk_relevances": [
+                0.9679571948478711,
+                0.9290964024165485,
+                0.8441856320775727,
+                0.9297498260413095,
+                0.8609472378325389,
+                0.9053690762444633,
+                0.8970825341128724,
+                0.9036168483529912
+            ],
+            "completeness": 0.8571428571428571,
+            "overlap_score": 0.0,
+            "engagement_score": 0.65,
+            "final_score": 0.6736859518820227
         }
     },
     {
         "query": "How can cities reduce their carbon footprint through urban planning?",
         "document": [
             {
-                "header": "Reducing Carbon Footprint through Urban Planning"
+                "header": "Urban Planning Strategies to Reduce City Carbon Footprints"
             },
             {
-                "paragraph": "Cities can significantly reduce their carbon footprint through effective urban planning. One approach is to design compact, walkable, and mixed-use neighborhoods that minimize the need for personal vehicles. This can be achieved by incorporating green spaces, pedestrian-friendly infrastructure, and public transportation systems. By promoting a more efficient use of land and reducing the reliance on cars, cities can lower their greenhouse gas emissions and create more sustainable communities.",
+                "paragraph": "Cities play a crucial role in the global fight against climate change, and urban planning is a powerful tool for reducing carbon footprints. One of the most effective strategies is promoting density and reducing suburban sprawl. By encouraging compact development, cities can significantly lower transport-related CO2 emissions, as residents live closer to services, jobs, and public transportation networks. This approach, known as gentle densification, not only reduces the need for personal vehicles but also preserves green spaces and agricultural land on the urban fringe.",
                 "citations": [
-                    1,
+                    3
+                ]
+            },
+            {
+                "web_query": "compact urban development vs suburban sprawl",
+                "query_type": "image"
+            },
+            {
+                "paragraph": "Public transportation is another cornerstone of sustainable urban planning. Efficient public transit systems, such as buses, trains, and trams, produce significantly lower per-passenger emissions compared to private vehicles. For instance, heavy rail transit can emit up to 76% less greenhouse gases per passenger mile than single-occupancy vehicles. By investing in and expanding public transportation networks, cities can offer residents a more sustainable alternative to car travel, reducing overall carbon emissions while improving mobility and access to opportunities.",
+                "citations": [
+                    1
+                ]
+            },
+            {
+                "metric": "76%",
+                "description": "Reduction in greenhouse gas emissions per passenger mile when using heavy rail transit compared to single-occupancy vehicles",
+                "citations": [
+                    1
+                ]
+            },
+            {
+                "paragraph": "Incorporating green spaces into urban areas is another effective strategy for lowering a city's carbon footprint. Urban parks, gardens, and tree-lined streets act as carbon sinks, absorbing CO2 through photosynthesis. Individual trees can sequester up to 25 kilograms of CO2 annually. Moreover, these green spaces contribute to carbon reduction indirectly by mitigating the urban heat island effect, which can lead to decreased energy consumption for cooling. They also promote walkability and cycling, further reducing reliance on motorized transportation.",
+                "citations": [
                     2
                 ]
             },
             {
-                "metric": "75% reduction in emissions",
-                "description": "Potential reduction in greenhouse gas emissions from transportation in cities with compact, walkable neighborhoods",
+                "web_query": "urban heat island effect diagram",
+                "query_type": "chart"
+            },
+            {
+                "paragraph": "Improving building efficiency is a critical urban planning strategy for reducing carbon emissions. This involves implementing stringent energy standards for new constructions and retrofitting older buildings to enhance insulation, utilize energy-efficient appliances, and incorporate renewable energy sources. Cities can also adopt policies that promote the development of net-zero energy buildings, which produce as much energy as they consume over the course of a year, significantly reducing their carbon footprint.",
                 "citations": [
                     3
                 ]
@@ -1347,215 +1351,65 @@
                 "table": [
                     [
                         "Strategy",
-                        "Description",
-                        "Potential Emissions Reduction"
+                        "Primary Benefit",
+                        "Secondary Benefit"
                     ],
                     [
-                        "Compact Neighborhoods",
-                        "Designing neighborhoods with a mix of housing, shops, and services",
-                        "20-30%"
-                    ],
-                    [
-                        "Green Infrastructure",
-                        "Incorporating green spaces and parks into urban design",
-                        "10-20%"
+                        "Compact Development",
+                        "Reduced Transport Emissions",
+                        "Preserved Green Spaces"
                     ],
                     [
                         "Public Transportation",
-                        "Investing in efficient public transportation systems",
-                        "30-40%"
+                        "Lower Per-Passenger Emissions",
+                        "Improved Urban Mobility"
+                    ],
+                    [
+                        "Urban Green Spaces",
+                        "Carbon Sequestration",
+                        "Heat Island Mitigation"
+                    ],
+                    [
+                        "Building Efficiency",
+                        "Reduced Energy Consumption",
+                        "Lower Operating Costs"
                     ]
                 ],
                 "citations": [
-                    4,
-                    5
+                    1,
+                    2,
+                    3
                 ]
             },
             {
-                "paragraph": "Another key aspect of urban planning is the incorporation of green infrastructure, such as parks, green roofs, and green walls. These features not only provide aesthetic benefits but also help to mitigate the urban heat island effect, reduce stormwater runoff, and improve air quality. By integrating green infrastructure into urban design, cities can create more sustainable and resilient environments.",
+                "paragraph": "The concept of the '15-minute city' is gaining traction as an innovative urban planning approach to reduce carbon emissions. This model aims to design neighborhoods where residents can access most of their daily needs within a 15-minute walk or bike ride. By promoting mixed-use development and ensuring a diverse range of services and amenities are available locally, cities can significantly reduce the need for car trips, thereby lowering transport-related emissions while improving quality of life for residents.",
                 "citations": [
-                    6,
-                    7
+                    3
                 ]
             },
             {
-                "web_query": "image of a green roof in a city",
+                "web_query": "15-minute city concept illustration",
                 "query_type": "image"
-            },
-            {
-                "metric": "10-20% reduction in urban heat island effect",
-                "description": "Potential reduction in urban heat island effect through the incorporation of green infrastructure",
-                "citations": [
-                    8
-                ]
             }
         ],
         "metrics": {
-            "total_relevance": 0.8915781299855029,
+            "total_relevance": 0.8641367150710048,
             "chunk_relevances": [
-                0.956771689696144,
-                0.9367066577614588,
-                0.8801164761582829,
-                0.8808931043487807,
-                0.8274980467055967,
-                0.8674828052427542
+                0.9425017393773234,
+                0.9120207512115405,
+                0.8334972591698693,
+                0.8704020489795591,
+                0.8200455855442506,
+                0.9057507943337548,
+                0.7791692399239848,
+                0.904908732103985,
+                0.879187359561745,
+                0.7938836405040353
             ],
             "completeness": 0.8181818181818182,
-            "overlap_score": 0.0,
-            "final_score": 0.7394923325367563
-        }
-    },
-    {
-        "query": "What is the significance of Immanuel Kant's categorical imperative in moral philosophy?",
-        "document": [
-            {
-                "header": "Immanuel Kant's Categorical Imperative"
-            },
-            {
-                "paragraph": "Immanuel Kant's categorical imperative is a central concept in moral philosophy that was introduced in his 1785 work, Grounding for the Metaphysics of Morals. The categorical imperative is a moral principle that is universal, absolute, and objective, and it is intended to provide a basis for moral decision-making that is independent of personal desires and interests. According to Kant, the categorical imperative is a moral law that is binding on all rational beings, and it is formulated as follows: 'Act only according to that maxim whereby you can at the same time will that it should become a universal law.'",
-                "citations": [
-                    1
-                ]
-            },
-            {
-                "metric": "1785",
-                "description": "Year Immanuel Kant published Grounding for the Metaphysics of Morals",
-                "citations": [
-                    1
-                ]
-            },
-            {
-                "paragraph": "The categorical imperative is significant because it provides a moral framework that is based on reason rather than emotion or personal preference. According to Kant, moral laws are not based on empirical observations or cultural norms, but rather on the universal principles of reason. The categorical imperative is also significant because it emphasizes the importance of treating individuals as ends in themselves, rather than as means to an end. This means that individuals should be treated with respect and dignity, regardless of their utility or usefulness to others.",
-                "citations": [
-                    1
-                ]
-            },
-            {
-                "table": [
-                    [
-                        "Key Features of the Categorical Imperative"
-                    ],
-                    [
-                        "Universal",
-                        "Absolute",
-                        "Objective"
-                    ],
-                    [
-                        "Based on reason",
-                        "Independent of personal desires and interests",
-                        "Binding on all rational beings"
-                    ]
-                ],
-                "citations": [
-                    1
-                ]
-            },
-            {
-                "paragraph": "The categorical imperative has had a significant impact on moral philosophy, and it continues to be widely studied and debated today. It has influenced a wide range of philosophical traditions, including deontology, consequentialism, and virtue ethics. The categorical imperative has also been applied in a variety of contexts, including ethics, politics, and law.",
-                "citations": [
-                    1
-                ]
-            },
-            {
-                "web_query": "Immanuel Kant portrait",
-                "query_type": "image"
-            }
-        ],
-        "metrics": {
-            "total_relevance": 0.8946985308247379,
-            "chunk_relevances": [
-                0.920910518423107,
-                0.9263160870135975,
-                0.852485215752558,
-                0.9276758701106729,
-                0.9006457640717767,
-                0.8401577295767161
-            ],
-            "completeness": 0.7857142857142857,
-            "overlap_score": 0.1333333333333333,
-            "final_score": 0.7532476899234142
-        }
-    },
-    {
-        "query": "What role do renewable energy sources play in combating climate change?",
-        "document": [
-            {
-                "header": "The Role of Renewable Energy in Combating Climate Change"
-            },
-            {
-                "paragraph": "Renewable energy sources play a crucial role in combating climate change by significantly reducing greenhouse gas emissions compared to fossil fuels. When renewable energy sources like wind, solar, and biomass are used to generate electricity, they displace energy produced by fossil fuels such as coal, oil, and natural gas, which are major contributors to CO2 emissions. Studies have shown that renewables can reduce CO2 emissions substantially; for example, generating 35% of electricity from wind and solar in the western U.S. could reduce CO2 emissions by 25-45%. Renewable energy sources emit far fewer greenhouse gases over their entire lifecycle, typically emitting about 50g or less of CO2 per kWh, compared to around 1000 g CO2/kWh for coal and 475 g CO2/kWh for natural gas.",
-                "citations": [
-                    1
-                ]
-            },
-            {
-                "metric": "25-45% reduction in CO2 emissions",
-                "description": "Potential reduction in CO2 emissions from generating 35% of electricity from wind and solar in the western U.S.",
-                "citations": [
-                    1
-                ]
-            },
-            {
-                "paragraph": "The main types of renewable energy sources include solar energy, wind energy, hydropower, geothermal energy, and biofuels or biomass. These renewable energy sources play a crucial role in mitigating climate change by significantly reducing carbon pollution and greenhouse gas emissions compared to fossil fuels. They help minimize the impact on the environment, lower air pollution, and can be used to replace fossil fuels in electricity generation and other energy needs.",
-                "citations": [
-                    3
-                ]
-            },
-            {
-                "table": [
-                    [
-                        "Renewable Energy Source",
-                        "Description"
-                    ],
-                    [
-                        "Solar Energy",
-                        "Harnesses sunlight through panels"
-                    ],
-                    [
-                        "Wind Energy",
-                        "Uses turbines to convert wind into electricity"
-                    ],
-                    [
-                        "Hydropower",
-                        "Generates energy from the flow of water"
-                    ],
-                    [
-                        "Geothermal Energy",
-                        "Utilizes the heat from the Earth's core for heating, bathing, and electricity production"
-                    ],
-                    [
-                        "Biofuels or Biomass",
-                        "Involves burning organic materials like wood or ethanol produced from plants"
-                    ]
-                ],
-                "citations": [
-                    3
-                ]
-            },
-            {
-                "paragraph": "Globally, several policies and initiatives are being implemented to promote the use of renewable energy in the fight against climate change. The Paris Agreement, which came into force in 2016, sets a global long-term goal to limit warming to well below 2 degrees Celsius and encourages countries to submit National Determined Contributions (NDCs) outlining their emission reduction targets and strategies, which often include increasing the share of renewable energy.",
-                "citations": [
-                    2
-                ]
-            },
-            {
-                "web_query": "infographic of renewable energy sources and their impact on climate change",
-                "query_type": "chart"
-            }
-        ],
-        "metrics": {
-            "total_relevance": 0.8860222181366343,
-            "chunk_relevances": [
-                0.9546382909557046,
-                0.9106512588372451,
-                0.8195973104309997,
-                0.8919270147213219,
-                0.8658966085534967,
-                0.8734228253210374
-            ],
-            "completeness": 0.75,
-            "overlap_score": 0.0,
-            "final_score": 0.7191133308819806
+            "overlap_score": 0.4,
+            "engagement_score": 0.7,
+            "final_score": 0.7352001405738564
         }
     }
 ]

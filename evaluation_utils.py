@@ -87,21 +87,71 @@ def calculate_overlap(response: list[dict]) -> float:
     overlap_score = 1 - (overlap_penalty / num_pairs) if num_pairs > 0 else 1
     return overlap_score
 
+def get_engagement_score(response: list[dict]) -> float:
+    """
+    Ask GPT-4 to analyze how engaging the article is and rate it a score out of 1.
+    """
+    # Concatenate all text content from the response for GPT-4 evaluation
+    combined_response = "\n".join(
+        chunk.get(key, "") for chunk in response for key in chunk if isinstance(chunk[key], str)
+    )
+
+    if not combined_response.strip():
+        return 0.0  
+
+    prompt = f"""
+    Analyze the following text for how engaging it is for a general audience.
+    Provide a score between 0 and 1, where:
+    - 0 means not engaging at all (e.g., too technical or poorly written),
+    - 1 means highly engaging (e.g., clear, concise, and keeps the reader's attention).
+    
+    Text:
+    {combined_response}
+    
+    Score:
+    """
+    try:
+        response = client.chat.completions.create(
+            model="gpt-4",
+            messages=[
+                {"role": "system", "content": "You are a helpful assistant."},
+                {"role": "user", "content": prompt}
+            ]
+        )
+        # Accessing content as an attribute instead of a dictionary
+        score_text = response.choices[0].message.content.strip()
+        engagement_score = float(score_text)
+        return max(0.0, min(1.0, engagement_score))  
+    except ValueError:
+        return 0.0 
+    except Exception as e:
+        print(f"Error with OpenAI API: {e}")
+        return 0.0
+
 
 def evaluate_response(query: str, response: list[dict]) -> dict:
     """
-    Evaluate the response for relevance, completeness, and overlap.
+    Evaluate the response for relevance, completeness, overlap, and engagement.
     """
     relevance_score, chunk_relevances = calculate_relevance(query, response)
     completeness_score = calculate_completeness(query, response)
     overlap_score = calculate_overlap(response)
-    weights = [0.5,0.3,0.2]
-    final_score = weights[0]*relevance_score + weights[1]*completeness_score + weights[2]*overlap_score
+    engagement_score = get_engagement_score(response)
+
+    weights = [0.4, 0.25, 0.2, 0.15]  # Updated weights to include engagement
+    final_score = (
+        weights[0] * relevance_score +
+        weights[1] * completeness_score +
+        weights[2] * overlap_score +
+        weights[3] * engagement_score
+    )
+
     return {
         "total_relevance": relevance_score,
         "chunk_relevances": chunk_relevances,
         "completeness": completeness_score,
         "overlap_score": overlap_score,
+        "engagement_score": engagement_score,
         "final_score": final_score
     }
 

@@ -7,7 +7,7 @@ import logging
 
 from api_utils import generate_and_get_document
 from default_payload import DEFAULT_PAYLOAD
-from evaluation_utils import evaluate_response  # Import metric calculation function
+from evaluation_utils import evaluate_response  
 
 MAX_WORKERS = 8
 
@@ -79,7 +79,6 @@ def generate_responses(queries: List[str]) -> None:
                 document = future.result()
                 metrics = evaluate_response(query, document)
 
-                # Append query, document, and metrics to response
                 models_responses.append({
                     "query": query,
                     "document": document,
@@ -91,7 +90,6 @@ def generate_responses(queries: List[str]) -> None:
             except Exception as e:
                 logging.error(f"Error processing query '{query}': {e}")
 
-    # Save responses to a JSON file
     try:
         with open("./model_responses.json", "w") as f:
             json.dump(models_responses, f, indent=4)

@@ -14,6 +14,8 @@ CAPITOL_URL = "https://hackathon.capitol.ai"
 
 
 def get_block_fields(block_str: str) -> dict[str, Any]:
+    print("BLOCK_STR")
+    print(block_str)
     for block, block_fields in BLOCK_FIELDS.items():
         if f'"{block}"' in block_str:
             return block_fields
@@ -22,6 +24,8 @@ def get_block_fields(block_str: str) -> dict[str, Any]:
 
 def generate_document(user_config_params: dict[str, Any]) -> dict[str, Any]:
     headers = {"CAP-LLM-API-KEY": CAPITOL_API_KEY}
+
+
     llm_endpoint_payload = {
         "params": {"external_id": ""},
         "user_config_params": user_config_params,
@@ -30,6 +34,7 @@ def generate_document(user_config_params: dict[str, Any]) -> dict[str, Any]:
         f"{CAPITOL_URL}/llm", headers=headers, json=llm_endpoint_payload
     )
     response_json = response.json()
+   
     return response_json
 
 
