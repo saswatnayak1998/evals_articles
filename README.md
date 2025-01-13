@@ -17,10 +17,11 @@
 
 4. **Engagement**:
 
-- How engaging is this text. Uses GPT4 to evaluate the engagement.
-  Each metric is designed to be interpretable and actionable, providing insights into the quality, coverage, and uniqueness of the system’s responses. Each one of them is then multiplied with weights and added to get a final_score.
+   - How engaging is this text. Can be used for various types of readers(general, specialized etc). Uses GPT4 to evaluate the engagement.
 
-1. What do you think are the most pressing challenges that a company like Capitol would face and how can evaluations help?
+Each metric is designed to be interpretable and actionable, providing insights into the quality, coverage, and uniqueness of the system’s responses. Each one of them is then multiplied with weights and added to get a final_score.
+
+5. What do you think are the most pressing challenges that a company like Capitol would face and how can evaluations help?
 
    ## **Pressing Challenges for Capitol.ai and Role of Evaluations**
 
