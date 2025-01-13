@@ -17,7 +17,7 @@
 
 4. **Engagement**:
 
-   - How engaging is this text. Can be used for various types of readers(general, specialized etc). Uses GPT4 to evaluate the engagement.
+   - How engaging is this text. Can be modified and used for various types of readers(general, specialized etc). Uses GPT4 to evaluate the engagement.
 
 Each metric is designed to be interpretable and actionable, providing insights into the quality, coverage, and uniqueness of the system’s responses. Each one of them is then multiplied with weights and added to get a final_score.
 
