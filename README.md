@@ -11,10 +11,14 @@
    - Quantified as the ratio of common tokens to total query tokens.
 
 3. **Overlap**:
+
    - Assesses redundancy by calculating pairwise cosine similarity between embeddings of response chunks.
    - Higher similarity penalizes the score, with a normalized result: `1 - average similarity`.
 
-Each metric is designed to be interpretable and actionable, providing insights into the quality, coverage, and uniqueness of the system’s responses.
+4. **Engagement**:
+
+- How engaging is this text. Uses GPT4 to evaluate the engagement.
+  Each metric is designed to be interpretable and actionable, providing insights into the quality, coverage, and uniqueness of the system’s responses. Each one of them is then multiplied with weights and added to get a final_score.
 
 1. What do you think are the most pressing challenges that a company like Capitol would face and how can evaluations help?
 
