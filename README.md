@@ -1,5 +1,7 @@
 ### **Summary: Quantifying Metrics**
 
+The metrics for the query are stored in model_responses.json file. It has details about all the metric and their corresponding values.
+
 1. **Relevance**:
 
    - Calculated using cosine similarity between query embeddings and response chunk embeddings.
